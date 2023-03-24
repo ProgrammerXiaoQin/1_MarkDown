@@ -1,0 +1,154 @@
+{
+  "main": {
+    "id": "355d3299317e4ed4",
+    "type": "split",
+    "children": [
+      {
+        "id": "26b544bdeda79c9e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "66914ab23504783d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "9.1_python_pandas.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "stacked": true
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5d6660b52be9b813",
+    "type": "split",
+    "children": [
+      {
+        "id": "ff37c7054e982c05",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f094c1d81c4ebba7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b6bc1cd7b5272123",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "82d79a9d6b228000",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 291.5,
+    "collapsed": true
+  },
+  "right": {
+    "id": "46b021d41a7f4211",
+    "type": "split",
+    "children": [
+      {
+        "id": "ef85fc0f9bb37df4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4f6568ee4a09d99a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "9.1_python_pandas.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c1a836a8bec7e018",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "9.1_python_pandas.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5a914b5a8da31bf2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "3fd23de498830fce",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "9.1_python_pandas.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "active": "f094c1d81c4ebba7",
+  "lastOpenFiles": [
+    "2_常用英文.md",
+    "临时文件夹/win11更换谷歌浏览器.md",
+    "11_正则.md",
+    "9.2_python_openpyxl.md",
+    "3_python爬虫.md",
+    "9.1_python_pandas.md",
+    "8_Linux使用指南.md",
+    "1_python基础.md",
+    "5_cmd_bat命令.md",
+    "9_python_selenium_WebAuto.md"
+  ]
+}
