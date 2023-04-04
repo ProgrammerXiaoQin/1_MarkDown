@@ -1,3 +1,4 @@
+#python #subprocess
 subprocess是Python 2.4中新增的一个模块，它允许你生成新的进程，连接到它们的 input/output/error 管道，并获取它们的返回（状态）码。可以用于执行系统命令
 
 ### 1.常用函数

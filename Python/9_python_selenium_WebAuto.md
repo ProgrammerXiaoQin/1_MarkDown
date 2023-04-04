@@ -1,3 +1,4 @@
+#python #selenium #web自动化
 Selenium Python 提供了一个简单的API 便于我们使用 Selenium WebDriver编写 功能/验收测试。
  通过Selenium Python的API，你可以直观地使用所有的 Selenium WebDriver 功能
 

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "af93ac23839bbd07",
+        "id": "3c3376836f84e87c",
         "type": "tabs",
         "children": [
           {
-            "id": "8ee78776d2200d64",
+            "id": "e5d81abbfa4d3d73",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "杂项/11_正则.md",
+                "file": "Python/1_python基础.md",
                 "mode": "source",
                 "source": false
               }
@@ -29,8 +29,9 @@
     "type": "split",
     "children": [
       {
-        "id": "b21ad5f885ae2624",
+        "id": "e31218a08f18566f",
         "type": "tabs",
+        "dimension": 80.76923076923077,
         "children": [
           {
             "id": "b4b5f727be47e314",
@@ -41,7 +42,14 @@
                 "sortOrder": "alphabetical"
               }
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "b21ad5f885ae2624",
+        "type": "tabs",
+        "dimension": 19.230769230769234,
+        "children": [
           {
             "id": "5c190b6a0d8deec0",
             "type": "leaf",
@@ -69,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "d9da91a203084090",
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "杂项/11_正则.md",
+                "file": "Python/1_python基础.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "杂项/11_正则.md",
+                "file": "Python/1_python基础.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -115,7 +123,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": false
               }
             }
           },
@@ -125,11 +133,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "杂项/11_正则.md"
+                "file": "Python/1_python基础.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -146,24 +155,35 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b4b5f727be47e314",
+  "active": "e5d81abbfa4d3d73",
   "lastOpenFiles": [
-    "杂项/10_git.md",
-    "杂项/5_cmd_bat命令.md",
-    "杂项/2_常用英文.md",
-    "Python/4_python_正则.md",
-    "杂项/11_正则.md",
-    "未命名.md",
-    "Python/2_python_subprocess.md",
-    "Python/3_python爬虫.md",
+    "Linux/8.1_Linux_deepin使用指南.md",
+    "Python/5_python并发编程.md",
     "Python/1_python基础.md",
+    "杂项/1_Obsidian_MD_语法.md",
+    "Python/2_python_subprocess.md",
+    "Python/5.1_python并发编程_线程.md",
+    "Python/6_python_opencv.md",
+    "Python/5_Anaconda.md",
+    "杂项/11_正则.md",
+    "Python/4_python_正则.md",
+    "杂项/5_cmd_bat命令.md",
+    "未命名",
+    "Python/3_python爬虫.md",
+    "图床/293f9f30554a706fd14ba4c08e6f835.png",
+    "Python/9.2_python_openpyxl.md",
+    "Python/9.1_python_pandas.md",
+    "Python/9_python_selenium_WebAuto.md",
+    "Linux/8_Linux使用指南.md",
+    "正则.md",
+    "正则表达式.md",
+    "杂项/10_git.md",
+    "杂项/2_常用英文.md",
+    "图床",
+    "未命名.md",
+    "Linux/8.2_Linux_shell.md",
     "Linux",
     "Python",
-    "Python/9.1_python_pandas.md",
-    "Linux/8_Linux使用指南.md",
-    "Linux/8.2_Linux_shell.md",
-    "Linux/8.1_Linux_deepin使用指南.md",
-    "Linux/8.3_Linux三剑客.md",
-    "Python/9.2_python_openpyxl.md"
+    "Linux/8.3_Linux三剑客.md"
   ]
 }
