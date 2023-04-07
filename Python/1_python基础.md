@@ -73,7 +73,7 @@
 	- `dict.update(dict2)` 把字典2的键值对更新到dict里
 	- `pop(key[, default])` 移除key对应的键值对,并返回该value
 
-#### 4. Set 集合
+##### 4. Set 集合
 >集合(set)是无序,不可重复的数据类型序列.可以使用大括号 { } 或者 set() 函数创建集合,注:创建空集合必须用`set()` 而不是`{}` , `{}` 是用来创建空字典的, `set` 对象可以理解为只包含key的dict (key不可重复,无序), 同理set不可放入可变对象如:list
 1. 查找
 	- for date in set 判断数据在集合
@@ -91,7 +91,7 @@
 	- `copy()` 拷贝集合
 	
 
-#### 3. String 字符串
+##### 5. String 字符串
 1. 转义字符
 	- `\(在行尾时)` 续行符
 	- `\a`  响铃
@@ -129,6 +129,22 @@
 	- `replace("aa","cc")`  , 替换,将字符串中的aa全部替换成cc
 	- `rfind()` ,  类似于find,从右边开始查找
 	- `upper()` 字符串中所有小写转换为大写
+
+
+
+
+
+
+##### 6.Float浮点数
+1. 浮点数运算问题
+`由于python中浮点数是以二进制形式存储的,浮点数转换为二进制过程中出现无限循环情况, 照成运算结果不精确(python是以双精度(64bit) 来保存浮点数, 后面多余的会砍掉)`
+- 解决方案:`from decimal import Decimal`
+	```python
+	from decimal import Decimal
+		a = Decimal('1.414062')
+		b = Decimal('0.000001')
+		print(a+b) ->1.414062
+	```
 
 
 
