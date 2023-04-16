@@ -24,7 +24,7 @@
 	- 用数字指代r:4,w:2,x:1
 
 4. 命令框用户标识[root@oldboy~]#
-	- root           当前登陆系统用户民(超级管理员)
+	- root           当前登陆系统用户名(超级管理员)
 	- oldboy       主机名称
 	- ~                当前用户家目录
 	- \#                当前用户为超级管理员  , $ 表示普通用户
@@ -41,7 +41,7 @@
 	- ctrl+u   删除光标之前的内容
 	- ctrl+w  删除光标之前的字符串(按空格分割)
 	- ctrl+z   暂停当前程序运行
-	   `jobs 查看站厅的程序,fg  +序号重新运行暂停的程序`
+	   `jobs 查看暂停的程序,fg  +序号重新运行暂停的程序`
 	- ctrl+s   进入远程链接锁屏状态
 	- ctrl+q   退出远程链接锁屏状态
 
@@ -59,6 +59,7 @@
 	- **sed  -i  '79s#yes#no#g'    /etc/ssh/sshd_config** 用sed命令修改文件
 	- 115 \#UseDNS yes              去掉#,yes改为no
 	- **sed -i '115s@#UseDNS yes@UseDNS no@g' /etc/ssh/sshd_config** 用sed命令修改 
+	- bash-completion 补全服务名称,通过yum下载
 
 10. 系统级别  `runlevel  #查看系统当前级别`
 	- 0 关机 init0
@@ -70,7 +71,8 @@
 	- 6  重启 init6
 	- `ll /usr/lib/systemd/system/runleve*target` 查看系统可以设置级别文件
 	- **systemctl get-default** 获取当前系统级别
-	- **systemctl get-default 设置级别文件** 设置系统永久级别
+	- **systemctl set-default 设置级别文件** 设置系统永久级别
+	- `graphical.target` 图形模式 , `multi-user.target` 字符模式
 
 11. 什么是命令
 	- 一个可执行程序,就像`/usr/bin`中的文件一样,可以是用C或C++写成的程序,可编译成二进制文件, 或脚本语言写成的程序例如`shell`, `python`等
@@ -90,8 +92,13 @@
 	vi ./ifcfg-(网卡名) 例:ifcfg-ens33,ifcfg-lo
 
  3. systemctl restart network 重启网络服务
+	 - status  查看服务运行状态
+	 - enable 开机后自动开启
+	 - disable 关闭,重启后也不会开启
+	 - start     临时开启
+	 - stop     临时关闭
 
- 4. history	查看当前执行的历史命令
+ 5. history	查看当前执行的历史命令
 	- -w保存命令到历史文件中
 	- -c 清空命令历史记录
 	- -d 删除历史命令第n行
@@ -145,16 +152,18 @@
 12. **mv** 移动或重命名file,dir
 	- mv filename newfilename
 	- mv dirname newdirname
-	- -i,-u 同cp
+	- -i,-u,-r同cp
 
 13. **top** 查看系统进程的动态运行情况
 	- 按1 在整体和各个cpu之间切换
 	- 按P 要求top按cpu占用率排序
 	- 按M 要求top按内存(RES)占用排序
-	- top -p pid
-	- 查看单个进程运行情况
+	- `top [-d number] | top [-bnp]`
+	- -d 表示top命令显示的页面更新一次的间隔
+	- -p 指定特定的pid进程号
+	
 
-14. **ls** 查看目录信息 ^8b02d7
+1. **ls** 查看目录信息 
 	- -a 列出所有文件,包括隐藏文件
 	- -l    显示文件详细信息,可简写为ll
 	- -ld  显示目录详细信息
@@ -164,13 +173,13 @@
 	- -li   显示文件详细信息和索引节点号
 	- -r   以相反顺序显示文件结果
 
-16. **wc**  统计文件的字节数、字数、行数
+2. **wc**  统计文件的字节数、字数、行数
 	- -l   统计行数(lines)
 	- -L 打印最长行的长度
 
-17. **free** 显示空闲内存数量
+3. **free** 显示空闲内存数量
 
-18. **ln** 创建硬链接 `ln [源文件] [链接文件]`
+4. **ln** 创建硬链接 `ln [源文件] [链接文件]`
 	- `ln file link`   创建硬链接
 	- `ln  -s  item link`  创建符号链接 item可以是文件或者目录
 	- 硬链接不能关联它所在文件系统之外的文件(也就是链接不能关联与链接所在磁盘不在一个文件磁盘分区上的文件)
@@ -188,6 +197,11 @@
 	-   软链接可以对一个不存在的文件名进行链接
 	-   软链接可以跨文件系统
 
+19. **cat** 查看文本文件
+	- -n 显示文件行数
+	- -E 每行结束处显示"$"
+	  
+
 
 
 ### 二. 文件相关命令
@@ -199,7 +213,7 @@
 2. Linux与Linux文件传输:
 	- 传送文件:scp  源文件地址  账号@ip:目标地址
    例: scp  /basefile  root@192.168.112.139:/opt
-	- :下载文件:scp  账号@ip:目标地址  下载位置
+	- 下载文件:scp  账号@ip:目标地址  下载位置
 	   例: scp  -r  root@192.168.112.138:/root/libai   /home
 	   参数 -r:传送下载文件夹
 
@@ -215,7 +229,14 @@
 2. hosts文件位置 :  /etc/hosts
 	
 3. netstat		查看当前网络状态信息
-    参数 -l 显示监听的套接口
+    - -l 显示监听的套接口
+    - -n 显示端口
+    - -a 所有连接和侦听端口，默认不显示LISTEN相关
+    - -i 显示网络接口列表
+    - -o 显示拥有的与每个连接关联的进程 ID
+    - -r 显示路由表
+    - -s 显示每个协议的统计信息
+    - 需要下载`net-tools`工具
 		
 4. 测试网络连接ping 测试端口telnet
 
@@ -261,7 +282,7 @@
    注:1.在~/.ssh/known_hosts记录了以前访问地址(ip hostname)信息
 
 1. 生成秘钥
-   ssh-keygen  -t  rsa  -P  ''  -f  ~/.ssh/id_rsa  
+   ssh-keygen  
    私钥:id_rsa 	公钥id_rsa.pub
 
 2. 发送公秘
