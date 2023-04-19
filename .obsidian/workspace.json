@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/8_Linux使用指南.md",
+                "file": "Linux/8.3_Linux三剑客.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/8.1_Linux_deepin使用指南.md",
+                "file": "Linux/8_Linux使用指南.md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/8_Linux使用指南.md",
+                "file": "Linux/8.3_Linux三剑客.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/8_Linux使用指南.md",
+                "file": "Linux/8.3_Linux三剑客.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/8_Linux使用指南.md"
+                "file": "Linux/8.3_Linux三剑客.md"
               }
             }
           }
@@ -167,24 +167,25 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "3551ffbe79025310",
+  "active": "b4b5f727be47e314",
   "lastOpenFiles": [
-    "Linux/8.1_Linux_deepin使用指南.md",
+    "Linux/8.2_Linux_shell.md",
     "Linux/8_Linux使用指南.md",
+    "杂项/2_常用英文.md",
+    "杂项/5_cmd_bat命令.md",
     "Linux/8.3_Linux三剑客.md",
+    "Linux/8.1_Linux_deepin使用指南.md",
+    "杂项/1_Obsidian_MD_语法.md",
     "Python/3_python爬虫.md",
     "Python/1_python基础.md",
     "Python/2_python_subprocess.md",
     "Python/6._算法_python.md",
-    "杂项/1_Obsidian_MD_语法.md",
     "Python/4_python_正则.md",
-    "Linux/8.2_Linux_shell.md",
     "杂项/11_正则.md",
     "Python/5_python并发编程.md",
     "Python/5.1_python并发编程_线程.md",
     "Python/6_python_opencv.md",
     "Python/5_Anaconda.md",
-    "杂项/5_cmd_bat命令.md",
     "未命名",
     "图床/293f9f30554a706fd14ba4c08e6f835.png",
     "Python/9.2_python_openpyxl.md",
@@ -193,7 +194,6 @@
     "正则.md",
     "正则表达式.md",
     "杂项/10_git.md",
-    "杂项/2_常用英文.md",
     "图床",
     "未命名.md",
     "Linux",
