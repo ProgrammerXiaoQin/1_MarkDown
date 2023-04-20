@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Linux/8.3_Linux三剑客.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -105,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/8.3_Linux三剑客.md",
+                "file": "Linux/8_Linux使用指南.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/8.3_Linux三剑客.md",
+                "file": "Linux/8_Linux使用指南.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/8.3_Linux三剑客.md"
+                "file": "Linux/8_Linux使用指南.md"
               }
             }
           }
@@ -167,21 +168,22 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b4b5f727be47e314",
+  "active": "dc87a83cd19e2a10",
   "lastOpenFiles": [
-    "Linux/8.2_Linux_shell.md",
+    "Linux/8.3_Linux三剑客.md",
     "Linux/8_Linux使用指南.md",
+    "Linux/8.2_Linux_shell.md",
+    "Linux/8.4_正则表达式.md",
+    "杂项/11_正则.md",
+    "Python/4_python_正则.md",
     "杂项/2_常用英文.md",
     "杂项/5_cmd_bat命令.md",
-    "Linux/8.3_Linux三剑客.md",
     "Linux/8.1_Linux_deepin使用指南.md",
     "杂项/1_Obsidian_MD_语法.md",
     "Python/3_python爬虫.md",
     "Python/1_python基础.md",
     "Python/2_python_subprocess.md",
     "Python/6._算法_python.md",
-    "Python/4_python_正则.md",
-    "杂项/11_正则.md",
     "Python/5_python并发编程.md",
     "Python/5.1_python并发编程_线程.md",
     "Python/6_python_opencv.md",
