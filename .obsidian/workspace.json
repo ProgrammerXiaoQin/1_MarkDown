@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/8_Linux使用指南.md",
+                "file": "Linux/8.4_正则表达式.md",
                 "mode": "source",
                 "source": false
               }
@@ -30,9 +30,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b36ee97d838c0e08",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/8.2_Linux_shell.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "042b8c0fe7208b7c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/8.3_Linux三剑客.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -90,8 +114,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 228.5,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "d9da91a203084090",
@@ -107,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/8.6.1_linux常用命令_定时任务.md",
+                "file": "Linux/8.3_Linux三剑客.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/8.6.1_linux常用命令_定时任务.md",
+                "file": "Linux/8.3_Linux三剑客.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/8.6.1_linux常用命令_定时任务.md"
+                "file": "Linux/8.3_Linux三剑客.md"
               }
             }
           }
@@ -169,14 +192,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "a39fdc0fb3e2cb08",
+  "active": "042b8c0fe7208b7c",
   "lastOpenFiles": [
-    "Linux/8_Linux使用指南.md",
-    "Linux/8.6.1_linux常用命令_定时任务.md",
-    "Linux/8.1_Linux_deepin使用指南.md",
     "Linux/8.2_Linux_shell.md",
-    "Linux/8.3_Linux三剑客.md",
+    "Linux/8.6.1_linux常用命令_定时任务.md",
     "Linux/8.4_正则表达式.md",
+    "Linux/8.3_Linux三剑客.md",
+    "Linux/8.1_Linux_deepin使用指南.md",
+    "Linux/8_Linux使用指南.md",
     "杂项/正则.png",
     "杂项/2_常用英文.md",
     "杂项/10_git.md",
