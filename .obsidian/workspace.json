@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f004cc454625d553",
+        "id": "8455c8248ae725f7",
         "type": "tabs",
         "children": [
           {
-            "id": "7aa0d87f9c9ecd02",
+            "id": "b269ab36eeb1303f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,31 +20,7 @@
             }
           },
           {
-            "id": "a39fdc0fb3e2cb08",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/8.6.1_linux常用命令_定时任务.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b36ee97d838c0e08",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/8.2_Linux_shell.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "042b8c0fe7208b7c",
+            "id": "de9d6d8f35a506af",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -56,7 +32,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -192,21 +168,23 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "042b8c0fe7208b7c",
+  "active": "de9d6d8f35a506af",
   "lastOpenFiles": [
-    "Linux/8.2_Linux_shell.md",
-    "Linux/8.6.1_linux常用命令_定时任务.md",
     "Linux/8.4_正则表达式.md",
     "Linux/8.3_Linux三剑客.md",
-    "Linux/8.1_Linux_deepin使用指南.md",
+    "Linux/8.6.1_linux常用命令_定时任务.md",
     "Linux/8_Linux使用指南.md",
+    "Linux/8.1_Linux_deepin使用指南.md",
+    "Linux/8.2_Linux_shell.md",
+    "windows/5_cmd_bat命令.md",
+    "杂项/1_Obsidian_MD_语法.md",
+    "windows/5.1_kms激活.md",
+    "windows",
     "杂项/正则.png",
     "杂项/2_常用英文.md",
     "杂项/10_git.md",
     "杂项/11_正则.md",
-    "杂项/5_cmd_bat命令.md",
     "Python/4_python_正则.md",
-    "杂项/1_Obsidian_MD_语法.md",
     "Python/3_python爬虫.md",
     "Python/1_python基础.md",
     "Python/2_python_subprocess.md",
@@ -215,7 +193,6 @@
     "Python/5.1_python并发编程_线程.md",
     "Python/6_python_opencv.md",
     "Python/5_Anaconda.md",
-    "未命名",
     "图床/293f9f30554a706fd14ba4c08e6f835.png",
     "Python/9.2_python_openpyxl.md",
     "Python/9.1_python_pandas.md",
@@ -223,7 +200,6 @@
     "正则.md",
     "正则表达式.md",
     "图床",
-    "未命名.md",
     "Linux",
     "Python"
   ]
