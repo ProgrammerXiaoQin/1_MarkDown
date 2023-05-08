@@ -39,5 +39,6 @@
 		- `git remote`    查看已添加的远程仓库
 		- `git remote rename origin origin2`     修改远程仓库的名字
 		- `git push origin master`     将暂存的代码推送到远程仓库
-	2. 免密登录
+		- `git remote rm origin`         删除一个已经存在的origin
+	1. 免密登录
 		1. `ssh-keygen -t rsa`      进入用户家目录生成公钥和私钥
