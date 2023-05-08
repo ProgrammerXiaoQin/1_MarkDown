@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "8455c8248ae725f7",
+        "id": "65e42f140f1e3b34",
         "type": "tabs",
         "children": [
           {
-            "id": "b269ab36eeb1303f",
+            "id": "c1a94e923d03a9c0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/8.4_正则表达式.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "de9d6d8f35a506af",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/8.3_Linux三剑客.md",
+                "file": "Linux/8.1_Linux_deepin使用指南.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -54,6 +41,14 @@
               "state": {
                 "sortOrder": "alphabetical"
               }
+            }
+          },
+          {
+            "id": "dd0fa8e24b865272",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
             }
           }
         ]
@@ -106,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/8.3_Linux三剑客.md",
+                "file": "Linux/8.1_Linux_deepin使用指南.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/8.3_Linux三剑客.md",
+                "file": "Linux/8.1_Linux_deepin使用指南.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/8.3_Linux三剑客.md"
+                "file": "Linux/8.1_Linux_deepin使用指南.md"
               }
             }
           }
@@ -168,10 +163,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "de9d6d8f35a506af",
+  "active": "c1a94e923d03a9c0",
   "lastOpenFiles": [
-    "Linux/8.4_正则表达式.md",
     "Linux/8.3_Linux三剑客.md",
+    "Linux/8.4_正则表达式.md",
     "Linux/8.6.1_linux常用命令_定时任务.md",
     "Linux/8_Linux使用指南.md",
     "Linux/8.1_Linux_deepin使用指南.md",
