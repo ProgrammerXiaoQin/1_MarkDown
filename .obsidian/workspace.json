@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "a8278059bdad0f76",
@@ -148,8 +149,10 @@
   },
   "active": "174681e653d85c32",
   "lastOpenFiles": [
-    "杂项/11_正则.md",
+    "Python/9.2_python_openpyxl.md",
+    "windows/5_cmd_bat命令.md",
     "杂项/10_Git.md",
+    "杂项/11_正则.md",
     "Linux/8.7_Linux_doker.md",
     "Linux/8.6.1_linux常用命令_定时任务.md",
     "Linux/8.4_正则表达式.md",
