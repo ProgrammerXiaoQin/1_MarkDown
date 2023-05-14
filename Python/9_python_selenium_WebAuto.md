@@ -7,17 +7,20 @@ Selenium Python 提供了一个简单的API 便于我们使用 Selenium WebDrive
 注:浏览器大版本号对应即可
 
 ### 一.webdriver对象属性方法
-1. ChromeOptions() 返回一个[[#二.ChromeOptions对象属性和方法 | Chromeoptions对象]],可以设定参数
-
-2. Chrome(options=obj(opentions)) 
-  启动浏览器,可以设定一个options对象,返回一个浏览器对象
+1. 导入`from selenium import webdriver`
+2. Chrome(chrome_options=cp , executable_path='local') 启动浏览器,可以设定启动选项 , 返回一个浏览器对象
+	- chrome_options=cp , 一个ChromeOptions对象 ,关键字参数
+	- executable_path='local'  浏览器驱动路径 , 添加到path里可以不用加这个选项
+  
 
 ### 二.ChromeOptions对象属性和方法
-1. add_argument("str") 给CO对象添加元素,设置运行选项
-	参数:
-	1.  '--user-data-dir=用户数据目录' 注:Chrome浏览器在chrome://version/查看
-	2. '--headless' 无界面启动
-	3. '--disable-gpu'  不加这个选项，无界面启动有时定位会出现问题
+1. 导入`from selenium.webdriver.chrome.options import Options`
+2. add_argument("str") 给CO对象添加元素,设置运行选项
+	- '--user-data-dir=用户数据目录' 注:Chrome浏览器在chrome://version/查看
+	- '--headless' 无界面启动
+	- '--disable-gpu'  不加这个选项，无界面启动有时定位会出现问题
+3. 禁用正在受自动软件控制警告
+	- `add_experimental_option('excludeSwitches',['enable-automation'])`
 
 ### 三.浏览器对象(browserObj)属性和方法
 1. get("Url")	 访问指定url

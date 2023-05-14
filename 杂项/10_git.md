@@ -43,7 +43,7 @@
 		- `git remote rm origin`        删除一个已经存在的origin
 		- `git pull [url]`                   拉取远程代码
 	2. 免密登录
-		1. `ssh-keygen -t rsa`      进入用户家目录生成公钥和私钥
+		1. `ssh-keygen -t rsa`      进入用户家目录下/.ssh生成公钥和私钥
 		2. 将公钥内容复制粘贴到github的`SSH and GPG keys`
 	3. pull拉取最新代码
 		1. `git fetch --all`       更新远程仓库代码为最新
