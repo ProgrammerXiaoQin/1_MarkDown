@@ -1,6 +1,8 @@
 #python
 
-# 1. 基础数据类型
+# 1. 数据类型
+Python 是弱类型语言，使用前不需要专门声明，赋值之后变量即被创建。Python 一共拥有 5 种标准的数据类型：**数值**（_Number_）、**字符串**（_String_）、**列表**（_List_）、**元组**（_Tuple_）、**字典**（_Dictionary_）。Python 这 5 种标准数据类型除了通过字面量方式声明之外，还可以通过构造函数`int()`、`float()`、`complex()`、`str()`、`list()`、`tuple()`、`dict()`进行声明。
+
 ##### 1.列表List
 >列表是有序可变的数据类型, 列表的元素可以重复如果需要比较列表可以用 operator 模块的 eq 方法, 内置函数len(list)可以获取list的长度
 
@@ -168,7 +170,7 @@ print(b)
 
 
 
-# 2.python运算符
+# 3.python运算符
 1. 逻辑运算符
 	- **and:**  `x and y` 如果 x 为 False，返回 x 的值，否则返回 y 的计算值。
 	- **or:**   `x or y`    如果 x 是 True，它返回 x 的值，否则它返回 y 的计算值。
@@ -184,3 +186,7 @@ print(b)
 
 
 
+
+# 4.作用域
+1. Python 当中仅`module`模块、`class`类、`def`或`lambda`函数会引入新作用域，`if/elif/else`、`try/except`、`for/while`等代码块并不会引入新作用域，即这些语句当中定义的变量在其外部也能访问。
+2. 

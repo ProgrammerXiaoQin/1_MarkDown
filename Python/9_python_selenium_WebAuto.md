@@ -9,8 +9,10 @@ Selenium Python 提供了一个简单的API 便于我们使用 Selenium WebDrive
 ### 一.webdriver对象属性方法
 1. 导入`from selenium import webdriver`
 2. Chrome(chrome_options=cp , executable_path='local') 启动浏览器,可以设定启动选项 , 返回一个浏览器对象
-	- chrome_options=cp , 一个ChromeOptions对象 ,关键字参数
-	- executable_path='local'  浏览器驱动路径 , 添加到path里可以不用加这个选项
+	- options=cp , 一个ChromeOptions对象 ,关键字参数
+	- service='Service'  浏览器驱动路径对象 , 添加到path里可以不用加这个选项
+		- `from selenium.webdriver.chrome.service import Service` 导入
+		- `service = Service(r'path')`  浏览器驱动路径
   
 
 ### 二.ChromeOptions对象属性和方法

@@ -87,6 +87,8 @@
 	- `type command` 显示命令类型
 	- `which command` 显示可执行程序的位置,如`which ls`
 
+12. 查看系统版本 `cat /etc/os-release`
+
 ### 一. 常用命令
  1. touch 创建文件
 	- touch 1.txt 创建个名为1.txt的文本文件
