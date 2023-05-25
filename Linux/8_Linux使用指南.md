@@ -20,7 +20,7 @@
 	
 3. 权限  查看文件详细信息 :-  rwx  rw-  ---
 	- 第一个- 表示为这时一个普通文件,d表示文件夹,l表示这是一个连接
-	- 中间之后的rwx表示当前用户对这个文件的权限r:读取,w:写入,x:可执行
+	- rwx表示对文件或目录的权限r:读取,w:写入,x:可执行
 	- 用数字指代r:4,w:2,x:1
 	- chmod可以用数字设置权限
 	- `chmod 766 file`
@@ -282,7 +282,7 @@
 
 8. **firewall-cmd  --list-ports** 查看所有永久开放的端口(默认为空)
 
-9. [ ] **selinux服务:** 限制root用户操作行为
+9. **selinux服务:** 限制root用户操作行为
 	- setenforce 0 临时关闭,开启为1
 	- `/etc/selinux/config` selinux配置文件
 ```shell
