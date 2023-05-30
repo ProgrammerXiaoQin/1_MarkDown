@@ -8,3 +8,4 @@
 	2. 使用
 		- 默认情况下，neofetch 显示当前发行版的 Logo。如果要使用其他发行版logo可以使用`--ascii_distro [版本名]`参数, 版本名可以是`kali, centos, ubunto windows`等等
 
+
