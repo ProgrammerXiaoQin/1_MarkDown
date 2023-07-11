@@ -4,35 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "e18d6d394e7fbe86",
+        "id": "f29d7b2a8b5b9fff",
         "type": "tabs",
         "children": [
           {
-            "id": "76412d7bbe6b8b73",
+            "id": "e4d7a8c8c14d4461",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/7.2_Linux服务.md",
+                "file": "网工/1.常用网络常识.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "698b3096518acb47",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/8.7_Linux_docker.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "95b3875b45d8efd4",
+            "id": "27d7ab3db13b4993",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -121,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/7.2_Linux服务.md",
+                "file": "网工/1.常用网络常识.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/7.2_Linux服务.md",
+                "file": "网工/1.常用网络常识.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/7.2_Linux服务.md"
+                "file": "网工/1.常用网络常识.md"
               }
             }
           }
@@ -182,31 +170,34 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "76412d7bbe6b8b73",
+  "active": "e4d7a8c8c14d4461",
   "lastOpenFiles": [
-    "Linux/8.7_Linux_docker.md",
-    "Linux/7.2_Linux服务.md",
     "Linux/8_Linux使用指南.md",
-    "Linux/8.4_正则表达式.md",
-    "Linux/8.6.1_linux常用命令_定时任务.md",
-    "Linux/9_Linux生产问题.md",
-    "Linux/8.8_Linux制作deb包.md",
+    "网工/1.常用网络常识.md",
+    "网工",
+    "Linux/7.2_Linux服务.md",
     "Linux/7_Linux包.md",
-    "杂项/11_正则.md",
-    "杂项/2_常用英文.md",
-    "杂项/1_Obsidian_MD_语法.md",
-    "Linux/8.3_Linux三剑客.md",
-    "Linux/8.1_Linux_deepin使用指南.md",
-    "杂项/10_Git.md",
-    "Python/4_python_正则.md",
-    "Python/3_python爬虫.md",
-    "Python/9.1_python_pandas.md",
-    "Python/2_python_subprocess.md",
-    "Python/1_python基础.md",
-    "Python/9_python_selenium_WebAuto.md",
     "Linux/8.2_Linux_shell.md",
+    "Linux/8.7_Linux_docker.md",
+    "Linux/8.3_Linux三剑客.md",
+    "Linux/8.4_正则表达式.md",
+    "Linux/8.8_Linux制作deb包.md",
+    "Linux/8.1_Linux_deepin使用指南.md",
+    "Linux/8.6.1_linux常用命令_定时任务.md",
+    "windows/5.2_windows terminal免密登录Linux主机.md",
+    "杂项/2_常用英文.md",
+    "杂项/10_Git.md",
+    "杂项/1_Obsidian_MD_语法.md",
+    "windows/5_cmd_bat命令.md",
+    "Python/4_python_正则.md",
+    "Python/1_python基础.md",
     "2023-05-10.md",
+    "杂项/11_正则.md",
     "Python/9.2_python_openpyxl.md",
-    "windows/5_cmd_bat命令.md"
+    "Python/9.1_python_pandas.md",
+    "Python/9_python_selenium_WebAuto.md",
+    "Python/6._算法_python.md",
+    "Python/5.1_python并发编程_线程.md",
+    "Python/5_python并发编程.md"
   ]
 }
