@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f29d7b2a8b5b9fff",
+        "id": "4b3b9dfccf498b91",
         "type": "tabs",
         "children": [
           {
-            "id": "e4d7a8c8c14d4461",
+            "id": "fbe3dec2599b8eec",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "网工/1.常用网络常识.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "27d7ab3db13b4993",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/8_Linux使用指南.md",
                 "mode": "source",
                 "source": false
               }
@@ -170,12 +158,26 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "e4d7a8c8c14d4461",
+  "active": "fbe3dec2599b8eec",
   "lastOpenFiles": [
-    "Linux/8_Linux使用指南.md",
+    "杂项/正则.png",
+    "杂项/银河麒麟v10 局域网vsftpd服务部署.md",
+    "杂项/2_常用英文.md",
+    "杂项/11_正则.md",
+    "杂项/1_Obsidian_MD_语法.md",
     "网工/1.常用网络常识.md",
-    "网工",
+    "图床/1d4a869dd6deee7c309a8461e7579c9895011ede.jpg_640w__web-note.jpeg",
+    "Python/9.3_python_pymysql.md",
+    "杂项/3_mysql.md",
+    "Python/2_python_subprocess.md",
+    "Python/1_python基础.md",
     "Linux/7.2_Linux服务.md",
+    "Linux/8_Linux使用指南.md",
+    "Python/9.1_python_pandas.md",
+    "Python/9_python_selenium_WebAuto.md",
+    "Python/3_python爬虫.md",
+    "Linux/9_Linux生产问题.md",
+    "网工",
     "Linux/7_Linux包.md",
     "Linux/8.2_Linux_shell.md",
     "Linux/8.7_Linux_docker.md",
@@ -185,19 +187,6 @@
     "Linux/8.1_Linux_deepin使用指南.md",
     "Linux/8.6.1_linux常用命令_定时任务.md",
     "windows/5.2_windows terminal免密登录Linux主机.md",
-    "杂项/2_常用英文.md",
-    "杂项/10_Git.md",
-    "杂项/1_Obsidian_MD_语法.md",
-    "windows/5_cmd_bat命令.md",
-    "Python/4_python_正则.md",
-    "Python/1_python基础.md",
-    "2023-05-10.md",
-    "杂项/11_正则.md",
-    "Python/9.2_python_openpyxl.md",
-    "Python/9.1_python_pandas.md",
-    "Python/9_python_selenium_WebAuto.md",
-    "Python/6._算法_python.md",
-    "Python/5.1_python并发编程_线程.md",
-    "Python/5_python并发编程.md"
+    "杂项/10_Git.md"
   ]
 }
