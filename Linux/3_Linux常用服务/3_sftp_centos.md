@@ -1,4 +1,4 @@
-## 一.vsftpd centos7 安装配置vsftpd
+
 #### 0. 简介
 1. FTP是一种在互联网中进行文件传输的协议，基于客户端/服务器模式，默认使用20、21号端口，其中端口20用于进行数据传输，端口21用于接受客户端发出的相关FTP命令与参数, ftp协议有主动模式和被动模式两种工作模式
 
@@ -124,26 +124,3 @@ message_file=.message                  设置目录消息文件
 listen=YES|NO                  YES     设置vsftpd服务器是否以standalone模式运行
 pasv_enable=YES|NO             YES     是否使用PASV工作模式（被动莫模式）
 ```
-
-## 二.MySQL centos7 安装mysql
-1. 下载 
-	- 进入www.mysql.com , 下载需要的社区版
-	- 将下载的tar包上传到服务器 , 或在服务器上用`wget url`或`curl -O url`下载
-2. 安装
-	- 安装前用`rpm -qa|grep mariadb`检查是否有mariadb库 , 该库跟MySQL有冲突 ,如果有用`rpm -e --nodeps maria-libs`强制卸载掉
-	- 用`tar -xvf file`解压tar包
-	- 用`rpm -ivh file.rpm` 按顺序安装以下包
-		1. mysql-community-common
-		2. mysql-community-client-plugins
-		3. mysql-community-libs
-		4. mysql-community-client
-		5. mysql-community-icu-data-files
-		6. mysql-community-server​
-
-3. 使用
-	1. 初始化`mysqld --initialize --console`
-	2. 修改安装目录所有用户和所属组 , 以便MySQL所属组用户直接使用`chown -R mysql:mysql /var/lib/mysql/`
-	3. 启动服务`systemctl start mysqld`
-	4. 查看默认密码`cat /var/log/mysqld.log | grep localhost`
-	5. 登录`mysql -u username -p`
-	6. 修改密码`alter user 'username'@'localhost' identified by 'newpass'`

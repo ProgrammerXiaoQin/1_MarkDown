@@ -11,7 +11,7 @@
 	- `bash hello.sh` ，将脚本文件作为参数传给shell程序来执行
 	- `source hello.sh` ,使用`source`命令执行
 
-
+ 
 ##### 二.shell常量与变量
 1. 定义变量时,变量与值之间不得有空格 ,shell自定义变量只作用于当前shell, 变量定义之后，引用变量时需要使用`$`符号, 用source或者点符号调用脚本,会用当前shell环境加载脚本,因此保留,并可以在sh中修改 , 用bash/sh解释器执行脚本,会开启一个子shell,因此不保留当前shell变量
 ```bash
