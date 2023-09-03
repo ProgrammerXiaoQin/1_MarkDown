@@ -4,34 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "db04f1adc96703b6",
+        "id": "fd697fd25bd62d2b",
         "type": "tabs",
         "children": [
           {
-            "id": "b45ad7b677ee8bf1",
+            "id": "e3b5ca125e0e9add",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网工/1_VRP基础/2_命令行基础.md",
+                "file": "网工/1_VRP基础/6_网络设备通用知识.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "6080ed7cce2185b4",
+            "id": "0bc6b64b4375b972",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网工/1_VRP基础/5_交换机.md",
+                "file": "网工/1.常用网络常识.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bf481bfefd8c3ab3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "网工/1_VRP基础/1_VRP系统.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -109,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网工/1_VRP基础/2_命令行基础.md",
+                "file": "网工/1_VRP基础/1_VRP系统.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网工/1_VRP基础/2_命令行基础.md",
+                "file": "网工/1_VRP基础/1_VRP系统.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网工/1_VRP基础/2_命令行基础.md"
+                "file": "网工/1_VRP基础/1_VRP系统.md"
               }
             }
           }
@@ -171,35 +184,36 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b45ad7b677ee8bf1",
+  "active": "bf481bfefd8c3ab3",
   "lastOpenFiles": [
-    "网工/1_VRP基础/3_常用系统操作.md",
-    "网工/1_VRP基础/4_路由器.md",
-    "网工/1_VRP基础/5_交换机.md",
-    "网工/1_VRP基础/2_命令行基础.md",
-    "网工/1_VRP基础/1_VRP介绍.md",
-    "网工/2.交换机原理和配置.md",
-    "网工/1_VRP基础/6_网络设备通用知识.md",
-    "网工/3.常见问题.md",
     "网工/1.常用网络常识.md",
+    "网工/1_VRP基础/6_网络设备通用知识.md",
+    "网工/2_协议/3_telnet协议.md",
+    "网工/1_VRP基础/1_VRP系统.md",
+    "网工/1_VRP基础/5_交换机.md",
+    "网工/2_协议/1_ARP协议.md",
+    "Linux/1_Linux基础命令/3_网络相关命令.md",
+    "网工/2_协议/2_ICMP协议.md",
+    "网工/1_VRP基础/4_路由器.md",
+    "网工/2_网络协议.md",
+    "网工/2_协议",
     "Linux/1_Linux基础命令/1_常用命令和bash特性.md",
+    "网工/1_VRP基础/3_常用系统操作.md",
+    "网工/1_VRP基础/2_命令行基础.md",
+    "网工/3.常见问题.md",
+    "Linux/2_Linux特性和知识/3_正则表达式.md",
+    "Linux/2_Linux特性和知识/4_Linux三剑客.md",
     "Linux/1_Linux基础命令/2_文件相关命令.md",
+    "Linux/8.3_其他第三方Linux软件.md",
+    "Linux/8.2_Linux常用操作.md",
+    "other/1_Obsidian_MD_语法.md",
+    "网工/2.交换机原理和配置.md",
     "Linux/1_Linux基础命令/5_vim编辑器.md",
     "Linux/1_Linux基础命令/9_网络和端口.md",
     "Linux/1_Linux基础命令/8_进程管理.md",
     "Linux/1_Linux基础命令/6_时间同步策略.md",
     "Linux/1_Linux基础命令/4_防火墙 , seLinux服务.md",
-    "Linux/1_Linux基础命令/3_网络相关命令.md",
-    "Linux/1_Linux基础命令/7_用户-权限-组.md",
-    "Linux/2_Linux特性和知识/1_Linux基础知识.md",
     "网工/1_VRP基础",
-    "网工/未命名.md",
-    "other/3_mysql.md",
-    "other/1_Obsidian_MD_语法.md",
-    "Linux/2_Linux特性和知识/2_Linux_shell.md",
-    "Linux/2_Linux特性和知识/5_Linux制作deb包.md",
-    "Linux/2_Linux特性和知识/3_正则表达式.md",
-    "Linux/1_Linux基础命令/13_其他高级命令.md",
     "Linux/3_Linux常用服务/未命名",
     "Linux/3_Linux常用服务",
     "Linux/2_Linux特性和知识",
