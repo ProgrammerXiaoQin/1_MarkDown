@@ -35,11 +35,12 @@
 4. CTRL+W 删除一个单词
 5. CTRL+Z 退回用户视图
 6. CTRL+] 终止当前链接或切换链接
-
+   
 #### 3. 常用命令
 1. `quit` 退回到上一个视图
 2. `sysname [name]` 修改设备名
 4. `reboot` 重启设备
+
 
 #### 4 .查看系统信息
 1. `display [commend]`
@@ -61,6 +62,7 @@
 1. 设置console链接设备密码
 	- `user-interface console 0` 进入console 0 接口
 	- `authentication-mode password` 设置密码 , 也可以使用`set authentication password cipher`命令修改
+
 2. 配置Telnet远程登录
 	1. 启动服务
 		- `telnet server enable` 启动telnet服务
@@ -74,24 +76,29 @@
 	4. 其他设置
 		- `user-interface maximum-vty ?` 系统视图下设置最大远程登录系统用户数
 		- `idle-timeout 60` 用户视下设置远程登录超时时间为60分钟
-3. 创建用户名和密码
-	- `user-interface vty 0 4` 进入 vty 0-4 接口
-	- `authentication-mode aaa` 修改认证模式为aaa
+
+3. 设置SSH登录模式
+	1. 启动ssh服务
+		- `stelnet server enable` 启用stelnet服务
+		- `display ssh server status` 查看ssh服务状态
+	2. 生成RSA密钥对
+		- `rsa local-key-pair create`  生成密钥对 
+		- `display rsa local-key-pair public` 查看公钥
+	3. 配置vty远程登录
+		- `user-interface vty 0 4` 进入 虚拟用户终端vty 0-4 接口
+		- `protocol inbound ssh` 修改协议入站方式为ssh
+		- `authentication-mode aaa` 修改认证模式为aaa认证
+	4. 其他设置
+		- `ssh server port [port]` 修改ssh默认端口
+		- `ssh server timeout ?`  设置认证超时时间
+
+4. 用户管理 , 创建用户 , 指定用户等级和用于的服务
 	- `aaa` 在系统视图下 , 进入aaa视图
 	- `local-user admin password cipher huawei` 设置本地用户名为admin , 密码为 : huawei
 	- `local-user admin privilege level 3` 修改用户等级为3
 	- `local-user admin service-type serviceName` 设置admin用户用来进行的服务类型
-2. 设置为stelnet登录模式
-	- `display rsa local-key-pair public` 查看当前密钥
-	- `rsa local-key-pair create`  创建密钥
-	- `aaa` 进入aaa视图
-	- `protocol inbound ssh` 修改协议入站方式为ssh
-	- `local-user admin service-type ssh` 修改登录方式为ssh
-	- `ssh user admin authentication-type password` 退出aaa , 修改admin账号认证方式为密码
-		- `display ssh user-information` 查看ssh用户登录表格
-	- `stelnet server enable` 启用stelnet服务
-		- `display ssh server status` 查看ssh服务状态
-3. 系统启动
+
+5. 系统启动
 	1. `startup system-software [系统软件完整路径]` 修改下次系统启动软件
 	2. `startup saved-configuration [flash:/xxxx.zip]` 修改下次启动加载的配置文件
 	
