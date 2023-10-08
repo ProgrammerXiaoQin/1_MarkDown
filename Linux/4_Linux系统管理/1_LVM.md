@@ -11,10 +11,10 @@
 	5. LV的增减实际上就是增减组成该LV的PE数量 , 其过程中不丢失原始数据
 	6. 构成 :   
 		- PE(physical Extend) , 物理扩展 ,LVM空间管理最基本单位 , 默认4Mb大小
-		- PV(physical Volume) , 物理卷
+		- PV(physical Volume) , 物理卷 , 个可供存储LVM的块设备. 例如: 一块硬盘, 一个分区, 一个回环文件, 一个被内核映射的设备 , 它包含一个特殊的LVM头
 		- VG(volume group) , 卷组(空间池) , 可以把一个或多个PV加入一个VG中
 		- LV(logical volume) , 逻辑卷
-		- 物理磁盘格式化
+		
 
 3. 创建LVM
 	1. 将物理磁盘设备初始化为物理卷PV
@@ -25,7 +25,7 @@
 		- -Z：是否利用前4个扇区
 	2. `vgcreate [name] [硬盘]`  创建卷组 , 并将PV加入卷组中
 	3. 基于卷组创建逻辑卷
-		- `lvcreate -n [LVname] -L +2G [VGname]`
+		- `lvcreate -n [LVname] -L 2G [VGname]`
 		- -n 指定逻辑卷名
 		- -L 指定逻辑卷大小(容量)
 		- -l 指定逻辑卷大小(PE个数) , 可用`+100%FREE` ,表示将所有可用空间都添加到逻辑卷LV
@@ -65,3 +65,4 @@
 	4. **lvremove**  , `lvremove /dev/vgname/lvname`删除逻辑卷
 	5. **vgremove** , `vgremove lvname` 删除卷组
 	6. **pvremove** , `pvremove pvname` 删除物理卷
+	7. **lvmdiskscan** , 列出可使用的物理卷设备

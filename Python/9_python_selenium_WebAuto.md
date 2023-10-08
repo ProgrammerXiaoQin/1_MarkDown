@@ -4,12 +4,14 @@ Selenium Python 提供了一个简单的API 便于我们使用 Selenium WebDrive
 
 运行selenium需要对应浏览器的驱动,Chrome浏览器驱动下载
 :https://chromedriver.storage.googleapis.com/index.html
+新版chrome驱动下载
+:https://googlechromelabs.github.io/chrome-for-testing/
 注:浏览器大版本号对应即可
 
 ### 一.webdriver对象属性方法
 1. 导入`from selenium import webdriver`
 2. Chrome(chrome_options=cp , executable_path='local') 启动浏览器,可以设定启动选项 , 返回一个浏览器对象
-	- options=cp , 一个ChromeOptions对象 ,关键字参数
+	- options=cp , 一个ChromeOptions对象 , 用用于设定启动选项
 	- service='Service'  浏览器驱动路径对象 , 添加到path里可以不用加这个选项
 		- `from selenium.webdriver.chrome.service import Service` 导入
 		- `service = Service(r'path')`  浏览器驱动路径
@@ -32,7 +34,7 @@ Selenium Python 提供了一个简单的API 便于我们使用 Selenium WebDrive
 3. find_element(By.id,"kw")	查找元素,返回一个element对象,"kw" 为查找元素的标签
    返回一个(如果找到多个返回第一个)WebElement对象
    参数:
-	- By.id 一个`selenium.webdriver.common.by`中的[[#五.By selenium.webdriver.common.by中的By实例 | By实例]],指定查找方式
+	- By.id 一个`from selenium.webdriver.common.by import By`中的[[#五.By selenium.webdriver.common.by中的By实例 | By实例]],指定查找方式
 	- "kw" 为查找元素的标签
 
 4. find_elements((By.CLASS_NAME, 'animal')	返回一个包含所有已找到元素的list
@@ -100,7 +102,7 @@ Selenium Python 提供了一个简单的API 便于我们使用 Selenium WebDrive
 	  - 类选择器:  .center {css...} .center表示所有class为center的标签
 		  查找元素实例:find_elements(CSS_SELETOR,".center")
 	  -  选择 子元素 和 后代元素 
-		  查找元素实例:find_elements(CSS_SELETOR,"#container > div  span")
+		- 子元素 : 查找元素实例:find_elements(CSS_SELETOR,"#container > div  span")
 		  表示查找id为container标签为div的子元素中标签为span的后代元素
 	  -  根据属性选择:假如有个标签 为
 	     \<a href="http://www.miitbeian.gov.cn">苏ICP备88885574号\</a>可用

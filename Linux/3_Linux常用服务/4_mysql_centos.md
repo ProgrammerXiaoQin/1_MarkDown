@@ -20,3 +20,15 @@
 	4. 查看默认密码`cat /var/log/mysqld.log | grep localhost`
 	5. 登录`mysql -u username -p`
 	6. 修改密码`alter user 'username'@'localhost' identified by 'newpass'`
+
+4. 修改配置 , 一般在`/etc/my.cnf`
+```my.cnf
+[mysqld]
+# skip-grant-tables=1 跳过登录认证
+
+
+default_password_lifetime=90 
+#default_password_lifetime=180 设置180天过期
+#default_password_lifetime=0 设置密码不过期 
+
+```

@@ -3,4 +3,9 @@
 	2. `ip addr` 命令查看网卡没有启动 , `ifup` 启动网卡提示`connection activation failed ...`
 	3. 因为是手动配的ip,检查`NetworkManager`服务 , 发现该服务正在启动的那个 ,停止该服务 ,`ifup`重新启用网卡成功
 	4. 新知识:network service管理网卡的配置,包括设备启动时网络设备的初始化 , networkmanager服务管理系统网络连接
-	
+
+2. 诊断和排除Linux服务器上的I/O性能问题
+	1. `lsblk` 查看系统上的存储设备 
+	2. `top`  看wa(CPU等待百分比) , 基本上是CPU等待I/O操作完成的时间 , 如果高于`10%`或`20%` 那么基本就是服务器卡顿瓶颈与I/O操作有关
+	3. `iostat -hymx 1 4` 查看设备性能 , 主要看 `%util` 项 , 如果过高基本可以判断为I/O问题
+	4. `iotop -o`  查看哪些进程在使用磁盘上的I/O

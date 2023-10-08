@@ -1,5 +1,6 @@
 ### 1. 修改配置
-1. 修改密码 , 登录进mysql后 , 执行`set password = password("root123");`
+1. 修改当前登录用户密码 , 登录进mysql后 , 执行`set password = password("root123");`
+	- 其他用户 : `set password for 'username'@'host' = password('123456')` ;
 2. 忘记密码:
 	- 在配置文件中加入`skip-grant-tables=1`
 	- 执行 `use mysql; alter user 'username'@'%' identified by 'newpass';` 修改密码
@@ -10,6 +11,17 @@
 skip-grant-tables=1
 ...
 ```
+
+3. 创建用户 `CREATE USER 'username'@'host' IDENTIFIED BY 'password';`
+	- username：你将创建的用户名
+	- host：指定该用户在哪个主机上可以登陆，如果是本地用户可用localhost，如果想让该用户可以从任意远程主机登陆，可以使用通配符`%`
+	- password：该用户的登陆密码，密码可以为空，如果为空则该用户可以不需要密码登陆服务器
+4. 授权 `GRANT privileges ON databasename.tablename TO 'username'@'host'`
+	- privileges : 用户的操作权限，如`SELECT`，`INSERT`，`UPDATE`等，如果要授予所的权限则使用`ALL`
+	- databasename : 数据库名
+	- tablename: 表名，如果要授予该用户对所有数据库和表的相应操作权限则可用`*`表示，如`*.*`
+5. 撤销用户权限 `REVOKE privilege ON databasename.tablename FROM 'username'@'host';`
+	- privilege, databasename, tablename: 同授权部分
 
 ### 2. 数据库
 1. 登录 `mysql -u username -p`
@@ -68,7 +80,6 @@ create table day01 (
 	
 
 6. 查看表信息 : `desc 表名;`
-
 
 
 ### 4.数据类型
@@ -144,3 +155,58 @@ select *
 	count(字段列表),max(),min(),avg(),sum()
 # select后面可以跟两种内容,分别是字段名称和函数
 ```
+
+### 5.权限管理
+1. 权限授权表 : mysql数据库下user、db、tables_priv、columns_priv、proce_priv、proxies_priv
+	- user表 : 指定全局权限 , 包括可以链接的服务器和密码
+	- db表 : 指定数据库级权限 , 里指定的权限适用于一个数据库中的所有表。
+	- tables_priv表 : 指定表级权限，在这里指定的一个权限适用于一个表的所有列。
+	- columns_priv表 : 指定列级权限。这里指定的权限适用于一个表的特定列。
+	- proce_priv表 : 指定存储过程权限。这里代表允许使用某个存储过程的权限。
+	- proxies_priv : 利用 MySQL proxies_priv（模拟角色）实现类似用户组管理。角色(Role)可以用来批量管理用户，同一个角色下的用户，拥有相同的权限
+
+2. 权限检查顺序
+	1. 校验user表，对于全局权限是ok → 直接执行
+	2. 检验DB表，对于某个有特定的数据库有权限 → 执行
+	3. 检验tables_priv，对于特定数据库下的某些表是有权限 → 执行
+	4. 检验columns_priv，对于特定表中的某些列有权限 → 执行
+![[v2-1d74866e133fff3771b97ac43ffd64cd_720w.webp]]
+
+3. 创建用户 `create user [用户名]@[访问地址] identified by [密码]`
+	- `[访问地址]` 的值如果为`localhost` 表示只能本地登录 , 无法远程链接 
+	- `%` 表示任何主机都可以链接
+
+4. 授予权限 `grant [权限1,权限2,权限3] on *.* to user@'host' identified by 'password'`
+	- 常用权限all privileges、create、drop、select、insert、delete、update
+		- all privileges 表示将所有权限授予给用户 , 可简写为`all`
+	- on : 这些权限对哪些数据库和表生效 , 格式`数据库名.表名` 这里`*`表示所有数据库所有表
+	- to : 将权限授予用户。格式：”用户名”@”登录IP或域名”。%表示没有限制，在任何主机都可以登录。比如：'zhangsan'@'192.168.1.%'，表示zhangsan这个用户只能在192.168.0.* IP段登录
+	- `with grant option` : 通过在grant语句的最后使用该子句，就允许被授权的用户把得到的权限继续授给其它用户
+	- 注 : 使用GRANT添加权限，权限会自动叠加，不会覆盖之前授予的权限
+
+5. 授予库 , 表权限
+	- `grant select on test.* to zhangsan;`
+	- 授予用户zhangsan可以对test数据库中的所有表进行查询
+	- `grant create、alter、drop、create view on test.* to lisi;`
+	- 授予lisi在test数据库中创建、修改、删除表的权限以及创建视图的权限
+	- `grant select on * to lisi;` 
+	- 授予lisi可以对当前数据库中的所有表进行查询, * :表示当前数据库
+	- `grant create,alter,drop on . to lisi；`
+	- 授予lisi可以创建、修改、删除数据库以及对所有数据库中的所有表进行create、alter和drop
+	- `grant create user on . to lisi;` 
+	- 授予lisi可以创建新用户
+
+6.  授予列权限
+	- `grant select(id,name,price) on test.temp to zhangsan@'localhost' WITH GRANT OPTION;`
+	- 给zhangsan用户赋权限，设置为在test库，temp表，上的id、name、price列只有select 权限
+	- `grant update(id,name) on test.shop to zhangsan@'localhost';`
+	- 授予用户zhangsan可以对test.shop表的id和name列进行更新
+
+8. 回收权限
+	- `revoke PROCESS ON *.* FROM admin@'localhost';`
+
+9. 删除用户
+	- `drop user admin@'localhost';`
+
+### 6.其他常用命令
+1. `select current_user();` 查看当前登录用户

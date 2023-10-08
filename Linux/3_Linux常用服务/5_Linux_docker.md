@@ -2,7 +2,7 @@ docker是基于Linux内核的Cgroups, NameSpace ,以及Union FS等技术 , 对�
 
 docker被定义为开源的容器引擎 , 可以方便对容器进行管理 , 包括镜像的打包封装 , 引入Docker Registry对镜像统一管理
 #### 一. Docker架构
-1. Docker 包括三个基本概念:
+1. Docker 包括三个基本概念:  
 	-  **镜像（Image）**：Docker 镜像（Image），就相当于是一个 root 文件系统。比如官方镜像 ubuntu:16.04 就包含了完整的一套 Ubuntu16.04 最小系统的 root 文件系统。
 	-   **容器（Container）**：镜像（Image）和容器（Container）的关系，就像是面向对象程序设计中的类和实例一样，镜像是静态的定义，容器是镜像运行时的实体。容器可以被创建、启动、停止、删除、暂停等。
 	-   **仓库（Repository）**：仓库可看成一个代码控制中心，用来保存镜像。
@@ -17,7 +17,7 @@ docker被定义为开源的容器引擎 , 可以方便对容器进行管理 , �
 	- 安装时如果提示找不到`docker-ce`包可以更新一下索引, `yum makecache fast`
 
 6. 启用docker
-	-  systemctl enable docker
+	- systemctl enable docker
 	- systemctl start docker
 
 7. 建立docker用户组
@@ -43,7 +43,7 @@ docker被定义为开源的容器引擎 , 可以方便对容器进行管理 , �
 	- `bash`  放在镜像名后的命令，这里我们需要有个交互式 Shell，因此用的是bash
 	- `docker run --name webserver -d -p 8081:80 nginx`
 	- `--name webserver` 将容器命名为webserver
-	- `-p 8081:80` 将主机的8081端口映射到容器的端口
+	- `-p 8081:80` 将主机的8081端口映射到容器的80端口
 	- `-d` 后台运行容器，并返回容器ID
 
 3. 列出镜像`docker image ls [imagename[:标签]]`
@@ -98,6 +98,7 @@ docker被定义为开源的容器引擎 , 可以方便对容器进行管理 , �
 
 #### 四.  使用dockerfile定制镜像
 1. 说明: Dockerfile 是一个文本文件，其内包含了一条条的 **指令(Instruction)**，每一条指令构建一层，因此每一条指令的内容，就是描述该层应当如何构建
+
 2. 语法
 	 - `FROM` 指定基础镜像 , 在其上进行定制 , 是dockerfile中必备的第一条指令,如果不相以任何镜像为基础可以用`FROM scratch` 
 		- `FROM ubuntu:18.04`
@@ -107,16 +108,30 @@ docker被定义为开源的容器引擎 , 可以方便对容器进行管理 , �
 		- `RUN echo '<h1>Hello, Docker!</h1>' > /usr/share/nginx/html/index.html`
 		- 由于dockerfile中每一个指令都会新建一层镜像 , 所以当有多个指令执行的时候应该用`&&`链接多个命令  , Dockerfile 支持 Shell 类的行尾添加 `\` 的命令换行方式，以及行首 `#` 进行注释的格式。
 		- 确保每一层镜像都只添加真正想的东西 , 做好在run最后删除无关紧要的文件
-	- `COPY` 指令将从构建上下文目录中 `<源路径>` 的文件/目录复制到新的一层的镜像内的 `<目标路径>` 位置。
+	- `COPY <src> <dest>` 复制本地主机`<src>`下内容到镜像的`<dest>` , 目标路径不存在时会自动创建
+		- `<src>` 本地工作路径(build时所指定)下的文件或目录 , 可以是多个，甚至可以是通配符
+		- `<dest>`可以是镜像内绝对路径，或者相对于工作目录(WORKDIR)的相对路径
 		- `COPY [--chown=<user>:<group>] <源路径>... <目标路径>`
 		- `COPY [--chown=<user>:<group>] ["<源路径1>",... "<目标路径>"]`
-
-3. 构建镜像
-	- `docker build [选项] <上下文路径/URL/->`
-	- `<上下文路径/URL/->` : dockerfile所在路径
+		- 使用 `COPY` 指令，源文件的各种元数据都会保留。比如读、写、执行权限、文件变更时间等。`--chown=<user>:<group>` 选项来改变文件的所属用户及所属组。
+	- `ADD <src> <dest>`
+		- `ADD` 指令和 `COPY` 的格式和性质基本一致 . 但是在 `COPY` 基础上增加了一些功能
+		- `<src>` 可以是一个 URL , Docker 引擎会试图去下载这个链接的文件放到 `<dest>` 去 , 下载后的文件权限自动设置为 `600`
+		- 如果 `<源路径>` 为一个 `tar` 压缩文件的话，压缩格式为 `gzip`, `bzip2` 以及 `xz` 的情况下，`ADD` 指令将会自动解压缩这个压缩文件到 `<目标路径>` 去
+		- 尽可能的使用 `COPY` , `ADD` 指令会令镜像构建缓存失效，从而可能会令镜像构建变得比较缓慢。
+	- `CMD` 与 `RUN` 相似，也是两种格式:
+		- `shell` 格式：`CMD <命令>`
+		- `exec` 格式：`CMD ["可执行文件", "参数1", "参数2"...]`
+		- `CMD` 指令用于指定默认的容器主进程的启动命令
+4. 构建镜像
+	- `docker build [选项] <本地工作路径/URL/->`
+	- `<本地工作路径/URL/->` : dockerfile中COPY , ADD等操作的本地工作路径
 	- `docker build -t nginx:v3 .`
-	- `-t` : 指定镜像名称
+	- `-f` : 指定dockerfile 
+	- `-t` : 指定镜像名称 
 	- `docker build` 命令构建镜像，并非在本地构建，而是在服务端Docker 引擎中构建 , 构建的时候，用户会指定构建镜像上下文的路径，`docker build` 命令得知这个路径后，会将路径下的所有内容打包，然后上传给 Docker 引擎
+	- `docker build http://server/context.tar.gz`
+	- 如果所给出的URL是个 `tar` 压缩包，那么 Docker 引擎会下载这个包，并自动解压缩，以其作为上下文，开始构建
 ```
 FROM nginx
 RUN echo '<h1>Hello, Docker!</h1>' > /usr/share/nginx/html/index.html
