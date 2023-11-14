@@ -182,7 +182,7 @@ AWK 是一种处理文本文件的语言，是一个强大的文本分析工具
 awk '/^$/{print "Blank line"}' test.txt
 ## 每匹配test.txt中每一个空行就打印一次Blank line
 awk -F: '{print NF,$NF,NR}' /etc/passwd
-## 以冒号为分隔符,输出每行总字段数,每行最后一个字和行号
+## 以冒号为分隔符,/输出每行总字段数,每行最后一个字和行号
 awk  'BEGIN{OFS="<>";FS=":"}{print $NF, $1}' /etc/passwd
 ## 以冒号为分割符,打印最后一个字段和第一个字段并用"<>"作为分割符
 awk -F: 'BEGIN{OFS="|"}{printf "|%+15s|%-15s|\n", $NF, $1}' /etc/passwd

@@ -9,3 +9,26 @@
 	2. `top`  看wa(CPU等待百分比) , 基本上是CPU等待I/O操作完成的时间 , 如果高于`10%`或`20%` 那么基本就是服务器卡顿瓶颈与I/O操作有关
 	3. `iostat -hymx 1 4` 查看设备性能 , 主要看 `%util` 项 , 如果过高基本可以判断为I/O问题
 	4. `iotop -o`  查看哪些进程在使用磁盘上的I/O
+
+3. centos使用sudo命令时候报错`# XXXX is not in the sudoers file. This incident will be reported`
+	1. 使用root账号 , 修改`/etc/sudoers`文件
+	2. 在文件中添加以下四行其中一行
+```text
+minghai           ALL=(ALL)             ALL 
+
+%minghai          ALL=(ALL)             ALL
+
+minghai           ALL=(ALL)             NOPASSWD：ALL
+
+%minghai          ALL=(ALL)             NOPASSWD：ALL
+```
+
+第一项: 允许用户minghai执行sudo命令(需要输入密码)
+第二项: 允许许用户组minghai里面的用户执行sudo命令(需要输入密码)
+第三项:允许用户minghai执行sudo命令，并且在执行的时候不输入密码
+第四项:允许用户组minghai里面的用户执行sudo命令，并且在执行的时候不输入密码。
+
+4. centos切换用户时报错`This account is currently not available`
+	1. `cat /etc/passwd | grep 用户名`
+	2. 将末尾shell `/sbin /nologin`修改为`/bin/bash`
+	3. 保存退出

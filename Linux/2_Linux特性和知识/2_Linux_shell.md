@@ -13,7 +13,7 @@
 
  
 ##### 二.shell常量与变量
-1. 定义变量时,变量与值之间不得有空格 ,shell自定义变量只作用于当前shell, 变量定义之后，引用变量时需要使用`$`符号, 用source或者点符号调用脚本,会用当前shell环境加载脚本,因此保留,并可以在sh中修改 , 用bash/sh解释器执行脚本,会开启一个子shell,因此不保留当前shell变量
+1. 定义变量时,变量与值之间不得有空格 ,shell自定义变量只作用于当前shell, 变量定义之后，引用变量时需要使用`$`符号, 用source或者点符号调用脚本,会用当前shell加载脚本,因此保留,并可以在sh中修改 , 用bash/sh解释器执行脚本,会开启一个子shell,因此不保留当前shell变量 , 如果想要当前shell和该shell开启的子shell(shell环境)都能识别该变量需要用export导入该变量
 ```bash
 	cat test.sh    ->user1="aaa"
 	user1="bbb"
@@ -22,7 +22,6 @@
 	source test.sh  
 	echo $uer1     ->aaa
 ```
-
 2.  shell变量没有类型 , bash默认把所变量认为是字符串
 ```shell
 	annum=2020
@@ -184,7 +183,7 @@ function_name(){
 	- `-e`    文件存在      `[ -e ~/.bashrc ]`
 	- -f     普通文件      `[ -f ~/.profile ]`
 	- `-s`    文件长度不为0   `[ -s /etc/mtab ]`
-	- -d    文件是目录  `[ -d /etc ]`
+	- `-d `   文件是目录  `[ -d /etc ]`
 	- `-r,-w,-x` 文件可读,可写,可执行 
 	- `file1 -nt file2`  文件1比文件2新   `[ ~/.bashrc –nt ~/.profile ]`
 	- `file1 -ot file2` 文件1比文件2跟旧 `[ ~/.bashrc –ot ~/.profile ]`
