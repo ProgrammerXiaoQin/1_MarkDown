@@ -17,6 +17,7 @@
 8. **firewall-cmd  --list-ports** 查看所有永久开放的端口(默认为空)
 
 9. **selinux服务:** 限制root用户操作行为
+	- `sestatus` 查看selinux服务状态
 	- setenforce 0 临时关闭,开启为1
 	- `/etc/selinux/config` selinux配置文件
 ```shell

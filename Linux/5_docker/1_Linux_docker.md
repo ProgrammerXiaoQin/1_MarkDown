@@ -1,4 +1,4 @@
-,docker是基于Linux内核的Cgroups, NameSpace ,以及Union FS等技术 , 对进程进行封装隔离 , 属于操作系统层面的虚拟化技术
+ docker是基于Linux内核的Cgroups, NameSpace ,以及Union FS等技术 , 对进程进行封装隔离 , 属于操作系统层面的虚拟化技术
 
 docker被定义为开源的容器引擎 , 可以方便对容器进行管理 , 包括镜像的打包封装 , 引入Docker Registry对镜像统一管理
 #### 一. Docker架构
@@ -53,14 +53,15 @@ $ firewall-cmd --reload
 	- `-v /test:/soft` 将宿主机`/test` 目录挂在到容器`/soft`目录 , 宿主机目录若是不存在则会自动生成 , 若宿主机使用相对目录 ,如`-v test1:/soft`则会在宿主机`/var/lib/docker/volumes/`目录下生成一个test1
 	- `--restart=`
 		- no：容器退出时不重启(默认)
-		- on-failure：容器故障退出（返回值非零）时重启
+		- on-failure：容器故障退出（返回值非零）时重启 , `on-failure:3`, 自动重启三次 ,如果还是错误则不再重启
 		- always：容器退出时总是重启
 	- 其他高级参数
 		- `-u` 指定容器用户
 		- `-c, --cpu-shares=0`， 设置容器CPU权重，在CPU共享场景使用
-		- `-m, --memory=""`， 指定容器的内存上限
+		- `-m, --memory=""`， 指定容器的内存上限 
 		- `-h, --hostname=""`， 指定容器的主机名
 		- `--dns=[]`， 指定容器的dns服务器
+		- `-e,--env` , 指定环境变量 , 格式为`-e key=value` , 多次指定设置多个
 
 3. 列出镜像`docker image ls [imagename[:标签]]`
 	1. `-a` 列出所有镜像(包括中间层镜像)
@@ -103,6 +104,7 @@ $ firewall-cmd --reload
 	- `bash`  将bash分配为伪终端
 	- `docker attach webserver`
 	- 进入webserver容器 , 用attach进入容器 , 输入exit会退出并会导致容器停止 , exec则只会退出
+	- `docker exec` 还可以让容器执行指定命令 , 如`docker exec -it nginx01 env` 将查看nginx容器的环境变量
 
 3. 操作容器暂停 , 重启 , 启动
 	- `docker stop 容器名` 或 `docker container stop <容器名>` 终止正则运行的容器
@@ -129,6 +131,9 @@ $ firewall-cmd --reload
 	- `cat ubuntu.tar | docker import - test/ubuntu:v1.0` 导入容器快照为镜像,`test/ubuntu:v1.0`分别为`用户名/软件名:标签`
 	- `docker import [选项] <文件>|<URL>|- [<仓库名>[:<标签>]]`
 	- 从网络或本地容导入器快照到镜像
+
+9. 查看容器状态: `docker stats <容器名>`
+
 #### 四.  使用dockerfile定制镜像
 1. 说明: Dockerfile 是一个文本文件，其内包含了一条条的 **指令(Instruction)**，每一条指令构建一层，因此每一条指令的内容，就是描述该层应当如何构建
 
@@ -265,3 +270,6 @@ CMD ["./app"]
 		- `-L`：如果SRC_PATH是一个符号链接，则复制链接指向的文件或目录。
 		- `-p`：保留源文件或目录的时间戳。
 		- `-R`或`-r`：递归复制整个目录
+
+3. 查看镜像或容器信息 
+	-  `docker inspect [容器或镜像id]` ,也可以用容器名或镜像名

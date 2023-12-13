@@ -195,7 +195,7 @@ awk -F: '$4 > $3{print $0}' /etc/passwd
 ## 打印属组ID大于属主ID的行
 awk -F: '$NF ~ "bash"{print $0}' passwd
 ## 打印以:分割 , 最后一个字段中包含bash的行
-awk -F [" ":]+ '{print $3$5$7}' /data/oldboy/oldboy.txt
+awk -F '" "|:' '{print $3$5$7}' /data/oldboy/oldboy.txt
 ## 以" "(空格)或:作为分割符
 awk 'NR%2==1{print $0}' passwd
 ## 打印奇数行

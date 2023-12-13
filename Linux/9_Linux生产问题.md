@@ -32,3 +32,6 @@ minghai           ALL=(ALL)             NOPASSWD：ALL
 	1. `cat /etc/passwd | grep 用户名`
 	2. 将末尾shell `/sbin /nologin`修改为`/bin/bash`
 	3. 保存退出
+
+5. 没有系统邮件 `yum install sendmail`
+	1. 没有查看查看工具 `yum install mailx`

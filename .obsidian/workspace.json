@@ -4,47 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "5d03e993b79fadf5",
+        "id": "8aa2065c60c224ea",
         "type": "tabs",
         "children": [
           {
-            "id": "85cb6471ce77d499",
+            "id": "5294d98eb95a2d2b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/9.2_python_openpyxl.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bedd481f03e998c3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/3_Linux常用服务/3_sftp_centos.md",
+                "file": "Linux/3_Linux常用服务/5_Nginx.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "039d7d0f082343c1",
+            "id": "41f8234741e6b426",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/1_Linux基础命令/9_打包和压缩.md",
+                "file": "Linux/1_Linux基础命令/1_常用命令和bash特性.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -102,11 +89,13 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a8278059bdad0f76",
@@ -122,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/1_Linux基础命令/9_打包和压缩.md",
+                "file": "Linux/3_Linux常用服务/5_Nginx.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/1_Linux基础命令/9_打包和压缩.md",
+                "file": "Linux/3_Linux常用服务/5_Nginx.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/1_Linux基础命令/9_打包和压缩.md"
+                "file": "Linux/3_Linux常用服务/5_Nginx.md"
               }
             }
           },
@@ -194,35 +183,37 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "5d8ce8ebf1659adc",
+  "active": "5294d98eb95a2d2b",
   "lastOpenFiles": [
-    "Linux/2_Linux特性和知识/1_Linux基础知识.md",
-    "Linux/3_Linux常用服务/3_sftp_centos.md",
-    "Linux/5_docker/1_Linux_docker.md",
-    "Linux/4_Linux系统管理/1_LVM.md",
-    "Linux/2_Linux特性和知识/3_正则表达式.md",
-    "Python/2_python_subprocess.md",
-    "Python/1_python基础.md",
-    "Python/4_python_正则.md",
-    "Python/9.2_python_openpyxl.md",
-    "Python/9.5_python_netmiko.md",
-    "Python/9.4_python_paramiko.md",
-    "Python/9.1_python_pandas.md",
-    "Python/7_python命令行技巧.md",
-    "Python/9.6_python_pyinstaller.md",
-    "Python/9.3_python_pymysql.md",
-    "网工/1.常用网络常识.md",
-    "网工/1_VRP基础/5_交换机.md",
-    "other/3_mysql.md",
-    "other/1.1_磁盘相关.md",
-    "Python/6._算法_python.md",
-    "other/正则.png",
-    "other/10_Git.md",
-    "other/2_标签系统搭建.md",
-    "other/1_Obsidian_MD_语法.md",
-    "Linux/3_Linux常用服务/1_时间同步.md",
-    "Linux/2_Linux特性和知识/2_Linux_shell.md",
+    "Linux/1_Linux基础命令/1_常用命令和bash特性.md",
+    "Linux/1_Linux基础命令/3_网络相关命令.md",
+    "Linux/3_Linux常用服务/5_Nginx.md",
+    "Linux/1_Linux基础命令/2_文件相关命令.md",
+    "Linux/2_Linux特性和知识/4_Linux三剑客.md",
+    "Linux/1_Linux基础命令/12_其他高级命令.md",
+    "Linux/1_Linux基础命令/11_包管理.md",
+    "Linux/1_Linux基础命令/10_磁盘管理.md",
+    "Linux/1_Linux基础命令/9_打包和压缩.md",
+    "Linux/1_Linux基础命令/8_网络和端口.md",
+    "Linux/1_Linux基础命令/7_进程管理.md",
+    "Linux/1_Linux基础命令/6_用户-权限-组.md",
+    "Linux/1_Linux基础命令/5_vim编辑器.md",
     "Linux/1_Linux基础命令/4_防火墙 , seLinux服务.md",
+    "windows/5.2_windows terminal免密登录Linux主机.md",
+    "Linux/2_Linux特性和知识/1_Linux基础知识.md",
+    "Linux/3_Linux常用服务/6_NFS.md",
+    "Linux/3_Linux常用服务/3_sftp_centos.md",
+    "Linux/5_docker/4_compose.md",
+    "Linux/5_docker/4.1_compose模板文件.md",
+    "Linux/8.2_Linux常用操作.md",
+    "Linux/8.1_Linux_麒麟使用指南.md",
+    "Linux/8.3_其他第三方Linux软件.md",
+    "Linux/9_Linux生产问题.md",
+    "Linux/2_Linux特性和知识/6_Linux_IO.md",
+    "Linux/2_Linux特性和知识/未命名.md",
+    "Linux/6_kubernetes",
+    "Rust",
+    "other/正则.png",
     "Linux/5_docker",
     "未命名.canvas",
     "图床/v2-1d74866e133fff3771b97ac43ffd64cd_720w.webp",
@@ -233,9 +224,7 @@
     "Linux/3_Linux常用服务/未命名",
     "Linux/3_Linux常用服务",
     "Linux/2_Linux特性和知识",
-    "Linux/1_Linux基础命令",
     "图床/微信图片_20230817164030.png",
-    "图床/1d4a869dd6deee7c309a8461e7579c9895011ede.jpg_640w__web-note.jpeg",
-    "网工"
+    "图床/1d4a869dd6deee7c309a8461e7579c9895011ede.jpg_640w__web-note.jpeg"
   ]
 }
