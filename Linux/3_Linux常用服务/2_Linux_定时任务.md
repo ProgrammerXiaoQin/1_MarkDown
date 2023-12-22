@@ -30,7 +30,7 @@
 	- `@hourly`   每小时运行一次, 等同于`0 * * * *`
 
 6. 例
-```shell
+```crontab
 */5 * * * * /root/backupscript.sh
 ## 每五分钟执行一次脚本
 0 1 * * * /root/backupscript.sh
@@ -39,6 +39,8 @@
 ## 每月的第一个凌晨 3:15 运行 backupscript 脚本
 @hourly /path/to/ntpdate
 ## 每小时运行一次 ntpdate 命令
-0 7,11/2 * * * /root/backupscript.sh
+0 7-11 * * * /root/backupscript.sh
 ## 每天早上七点到11点执行一次脚本
 ```
+
+7. 查看crontab 执行日志 `tail -f /var/log/cron` 

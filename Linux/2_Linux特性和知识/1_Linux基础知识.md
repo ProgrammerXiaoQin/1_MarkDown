@@ -56,6 +56,7 @@
 	- 临时设置,修改$LANG参数
 	- 永久修改,修改`/etc/locale.conf` 配置文件
 	- **localectl** 查看当前系统编码
+	- 查看可用系统编码 `locale -m`
 
 9. 系统远程链接优化
 	- 修改配置文件/etc/ssh/sshd_config

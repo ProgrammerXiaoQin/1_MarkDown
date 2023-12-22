@@ -4,28 +4,52 @@
     "type": "split",
     "children": [
       {
-        "id": "8aa2065c60c224ea",
+        "id": "e77989190c6663c5",
         "type": "tabs",
         "children": [
           {
-            "id": "5294d98eb95a2d2b",
+            "id": "66771bf8578603d0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/3_Linux常用服务/5_Nginx/8. 动静分离.md",
+                "file": "Linux/3_Linux常用服务/5_Nginx/2_配置文件.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e472f9206d55dcf8",
+            "id": "1d9e3dd85fc943b2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/4_Linux系统管理/1_LVM.md",
+                "file": "Linux/3_Linux常用服务/5_Nginx/3.配置虚拟主机.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4f8a96e238b10881",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/3_Linux常用服务/1_时间同步.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "02172faac3717cee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/1_Linux基础命令/3_网络相关命令.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "ntp",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +118,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a8278059bdad0f76",
@@ -110,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/4_Linux系统管理/1_LVM.md",
+                "file": "Linux/3_Linux常用服务/5_Nginx/3.配置虚拟主机.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/4_Linux系统管理/1_LVM.md",
+                "file": "Linux/3_Linux常用服务/5_Nginx/3.配置虚拟主机.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/4_Linux系统管理/1_LVM.md"
+                "file": "Linux/3_Linux常用服务/5_Nginx/3.配置虚拟主机.md"
               }
             }
           },
@@ -182,35 +207,35 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "e472f9206d55dcf8",
+  "active": "1d9e3dd85fc943b2",
   "lastOpenFiles": [
-    "Linux/3_Linux常用服务/4_mysql_centos.md",
-    "Linux/3_Linux常用服务/5_Nginx.md",
-    "Linux/3_Linux常用服务/6_NFS.md",
-    "Linux/8.2_Linux常用操作.md",
-    "Linux/3_Linux常用服务/5_Nginx/8. 动静分离.md",
-    "Linux/3_Linux常用服务/5_Nginx/7. 负载均衡.md",
-    "Linux/3_Linux常用服务/5_Nginx/5. 反向代理.md",
-    "Linux/3_Linux常用服务/5_Nginx/4. location语法规则.md",
     "Linux/3_Linux常用服务/5_Nginx/2_配置文件.md",
-    "Linux/3_Linux常用服务/5_Nginx/6. 正向代理.md",
-    "Linux/3_Linux常用服务/5_Nginx/1. 简介和安装.md",
-    "Linux/3_Linux常用服务/5_Nginx/3.配置虚拟主机.md",
-    "Linux/1_Linux基础命令/1_常用命令和bash特性.md",
-    "Linux/3_Linux常用服务/5_Nginx",
+    "Linux/3_Linux常用服务/5_Nginx/9. nginx开启Gzip压缩.md",
     "Linux/1_Linux基础命令/3_网络相关命令.md",
-    "Linux/1_Linux基础命令/2_文件相关命令.md",
-    "Linux/2_Linux特性和知识/4_Linux三剑客.md",
-    "Linux/1_Linux基础命令/12_其他高级命令.md",
+    "Linux/3_Linux常用服务/1_时间同步.md",
+    "Linux/3_Linux常用服务/5_Nginx/3.配置虚拟主机.md",
+    "Linux/2_Linux特性和知识/2_Linux_shell.md",
+    "Linux/2_Linux特性和知识/6_Linux_IO.md",
     "Linux/1_Linux基础命令/11_包管理.md",
+    "Linux/1_Linux基础命令/1_常用命令和bash特性.md",
+    "Linux/1_Linux基础命令/12_其他高级命令.md",
+    "Linux/2_Linux特性和知识/1_Linux基础知识.md",
+    "Linux/2_Linux特性和知识/4_Linux三剑客.md",
+    "Linux/1_Linux基础命令/4_防火墙 , seLinux服务.md",
+    "Linux/1_Linux基础命令/2_文件相关命令.md",
     "Linux/1_Linux基础命令/10_磁盘管理.md",
     "Linux/1_Linux基础命令/9_打包和压缩.md",
     "Linux/1_Linux基础命令/8_网络和端口.md",
+    "Linux/3_Linux常用服务/5_Nginx/1. 简介和安装.md",
+    "Linux/8.2_Linux常用操作.md",
     "Linux/1_Linux基础命令/7_进程管理.md",
+    "Linux/3_Linux常用服务/6_NFS.md",
+    "Linux/3_Linux常用服务/2_Linux_定时任务.md",
+    "Linux/8.1_Linux_麒麟使用指南.md",
     "Linux/1_Linux基础命令/6_用户-权限-组.md",
-    "Linux/1_Linux基础命令/5_vim编辑器.md",
-    "Linux/1_Linux基础命令/4_防火墙 , seLinux服务.md",
-    "windows/5.2_windows terminal免密登录Linux主机.md",
+    "Linux/8.3_其他第三方Linux软件.md",
+    "Linux/9_Linux生产问题.md",
+    "Linux/3_Linux常用服务/5_Nginx",
     "Linux/6_kubernetes",
     "Rust",
     "other/正则.png",
