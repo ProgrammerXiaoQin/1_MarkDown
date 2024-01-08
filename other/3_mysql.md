@@ -3,7 +3,7 @@
 	- 其他用户 : `set password for 'username'@'host' = password('123456')` ;
 2. 忘记密码:
 	- 在配置文件中加入`skip-grant-tables=1`
-	- 执行 `use mysql; alter user 'username'@'%' identified by 'newpass';` 修改密码
+	- 执行 `use mysql; alter user 'username'@'%' identified by 'newpass';` 修改密码(如果出现`ERROR 1290 (HY000)`错误可以执行一下`flush privileges;` 命令刷新权限)
 	- 退出mysql删除配置文件中的`skip-grant-tables=1` , 重启mysql服务
 ```my.cnf
 [mysqld]
@@ -127,6 +127,11 @@ create table day01 (
 	6. `left join` 左连接
 		- 用法类似 `inner join` 保留左边所选取的数据 , 然后把右边表格符合条件的合并过来 
 		- 例 : `s`
+	7. `limit number number` 限制返回结果 
+		- `limit 1` 返回一条数据(默认第一条)
+		- `limit 4 , 6` 返回从索引4(第五条)开始 , 共六条数据
+	8. `max()` 求最大值
+		- `MAX(your_column)` 将返回该列的最大值
 
 4. 运算符 , 比较运算符 , 逻辑运算符
 	- 例 : `select * from 表名 where 列名 between 10 and 20;`
