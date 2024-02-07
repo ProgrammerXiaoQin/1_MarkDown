@@ -4,31 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "9d9d5a12f049325e",
+        "id": "85965dbcbcab95dc",
         "type": "tabs",
         "children": [
           {
-            "id": "d83c3359dd9bbb47",
+            "id": "9afcc5111f6daaa4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/1_Linux基础命令/12_其他高级命令.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b4710347221a7ca1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/1_Linux基础命令/8_网络和端口.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -60,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "忘记",
+                "query": "分区",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,7 +93,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/1_Linux基础命令/12_其他高级命令.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +109,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/1_Linux基础命令/12_其他高级命令.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,9 +130,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Linux/1_Linux基础命令/12_其他高级命令.md"
-              }
+              "state": {}
             }
           },
           {
@@ -181,35 +161,40 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "d83c3359dd9bbb47",
+  "active": "5d8ce8ebf1659adc",
   "lastOpenFiles": [
-    "Linux/1_Linux基础命令/3_网络相关命令.md",
-    "Linux/1_Linux基础命令/11_包管理.md",
-    "Linux/1_Linux基础命令/8_网络和端口.md",
-    "Linux/8.2_Linux常用操作.md",
-    "Linux/1_Linux基础命令/7_进程管理.md",
-    "Linux/1_Linux基础命令/1_常用命令和bash特性.md",
-    "Linux/2_Linux特性和知识/3_正则表达式.md",
-    "Linux/2_Linux特性和知识/2_Linux_shell.md",
-    "Linux/2_Linux特性和知识/1_Linux基础知识.md",
-    "Linux/2_Linux特性和知识/4_Linux三剑客.md",
-    "Linux/1_Linux基础命令/2_文件相关命令.md",
     "Linux/1_Linux基础命令/10_磁盘管理.md",
-    "网工/1_VRP基础/6_网络设备通用知识.md",
-    "网工/1_VRP基础/5_交换机.md",
-    "网工/1.常用网络常识.md",
-    "Linux/9_Linux生产问题.md",
-    "Linux/8.3_其他第三方Linux软件.md",
     "Linux/8.1_Linux_麒麟使用指南.md",
-    "Linux/3_Linux常用服务/9_docker/1_Linux_docker.md",
-    "Linux/1_Linux基础命令/9_打包和压缩.md",
-    "other/2_标签系统搭建.md",
-    "other/11_正则.md",
-    "Python/9_函数式编程.md",
+    "Linux/4_Linux系统管理/1_LVM.md",
+    "Linux/9_Linux生产问题.md",
+    "windows/1_windows安装启动.md",
+    "other/1.1_磁盘相关.md",
+    "windows/2_window_devtunnels内网穿透.md",
+    "windows/5.1_kms激活.md",
+    "windows/5.2_windows terminal免密登录Linux主机.md",
+    "Linux/3_Linux常用服务/1_ansible/1_ansible基础.md",
+    "Linux/3_Linux常用服务/7_zabbix.md",
+    "Linux/3_Linux常用服务/1_ansible",
+    "Linux/3_Linux常用服务/9_ansible.md",
+    "Linux/1_Linux基础命令/2_文件相关命令.md",
     "Python/1_python基础.md",
-    "Rust/1_rust工具使用.md",
-    "Python/常用库/9.9_python_opencv.md",
-    "Python/常用库",
+    "网工/1.常用网络常识.md",
+    "windows/5_cmd_bat命令.md",
+    "网工/2_协议/5_LLDP协议.md",
+    "网工/2_协议/4_ssh协议.md",
+    "网工/2_协议/2_ICMP协议.md",
+    "网工/2_协议/1_ARP协议.md",
+    "网工/3.常见问题.md",
+    "网工/1_VRP基础/1_VRP系统.md",
+    "Python/2_常用库/9.2_python_openpyxl.md",
+    "Python/2_常用库/9.5_python_netmiko.md",
+    "Python/7_python命令行技巧.md",
+    "Linux/3_Linux常用服务/4_mysql_centos.md",
+    "Python/1_内置库",
+    "图床/1d4a869dd6deee7c309a8461e7579c9895011ede.jpg_640w__web-note.jpeg",
+    "图床/1144139-20200831111054990-1558810125.png",
+    "图床/293f9f30554a706fd14ba4c08e6f835.png",
+    "Python/2_常用库",
     "Linux/3_Linux常用服务/5_Nginx",
     "Linux/3_Linux常用服务/10_kubernetes",
     "Rust",
@@ -220,9 +205,6 @@
     "图床/v2-1d74866e133fff3771b97ac43ffd64cd_720w.webp.crdownload",
     "Linux/4_Linux系统管理",
     "网工/2_协议",
-    "网工/1_VRP基础",
-    "Linux/3_Linux常用服务",
-    "图床/微信图片_20230817164030.png",
-    "图床/1d4a869dd6deee7c309a8461e7579c9895011ede.jpg_640w__web-note.jpeg"
+    "图床/微信图片_20230817164030.png"
   ]
 }

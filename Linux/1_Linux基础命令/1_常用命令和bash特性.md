@@ -140,4 +140,14 @@
 1. Tab键 , 自动补全参数
 2. Ctrl-r , 搜索命令行历史记录 , 重复按下Ctrl-r向后搜索 , 回车键执行 , 右方向键将命令放到当前行 , 不直接执行
 3. Ctrl-w , 删除最后一个单词 , Ctrl-u , 删除光标前内容 , Ctrl-k , 删除贯标后的内容
-5. Ctrl-b和f , 按单词移动贯标 , Ctrl-a可以将光标移动到行首 , Ctrl-e移动到行尾
+4. Ctrl-b和f , 按单词移动贯标 , Ctrl-a可以将光标移动到行首 , Ctrl-e移动到行尾
+5. bash的 `here documents` 定义长文件输入符号
+	- 当shell脚本或命令需接收多行文件作为输入时候 ,` here documents`允许在脚本中嵌入多行文本
+	- 长用的分割字符为`EOF`
+```bash
+command << delimiter 
+	your text here 
+	more text 
+delimiter
+#在这里delimiter是一个自定义的分隔符,你可以选择一个不会与文本内容冲突的字符串
+```

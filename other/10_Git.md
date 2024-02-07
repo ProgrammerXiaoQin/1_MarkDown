@@ -57,3 +57,15 @@
 	- `git branch feature1`        创建feature1分支
 		- -b                              创建分支并切换到该分支
 	- `git checkout feature1`    切换到feature1分支
+
+5. 设置代理
+```bash
+git config --global http.proxy socks5://127.0.0.1:7890
+git config --global https.proxy socks5://127.0.0.1:7890
+##设置http和https代理 , socks5://127.0.0.1:7890为clash代理
+git config --global -l
+##查看已有代理
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+##取消代理
+```

@@ -53,6 +53,10 @@ netsh interface ipv6 add route ::/0 网卡名称  网关
 
 17. **chkdsk** 磁盘修复工具
 
+18. 修改MTU的值
+	- `netsh interface ipv4 show subinterfaces` 查看MTU的值
+	- `netsh interface ipv4 set subinterface "wlan" mtu=1500 store=persistent` 修改网卡wlan的值为1500
+
 ### 实例:
 1. 查看局域网内所有IP与Mac地址
 	- ipconfig /all 查看本机的首选IP地址
