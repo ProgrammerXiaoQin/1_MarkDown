@@ -35,3 +35,6 @@ minghai           ALL=(ALL)             NOPASSWD：ALL
 
 5. 没有系统邮件 `yum install sendmail`
 	1. 没有查看查看工具 `yum install mailx`
+
+6. ssh 远程不上排错
+	- ssh连接时加`-vvv` 查看详细debug信息

@@ -56,7 +56,9 @@ netsh interface ipv6 add route ::/0 网卡名称  网关
 18. 修改MTU的值
 	- `netsh interface ipv4 show subinterfaces` 查看MTU的值
 	- `netsh interface ipv4 set subinterface "wlan" mtu=1500 store=persistent` 修改网卡wlan的值为1500
-
+19. ping
+	- -l 指定数据包大小（一旦size超过1472字节可能ping不通，服务器处于安全防护）（ping自身报文长度为8bit，ip报头长度为20字节，8+20+1472=1500，大部分服务器响应报文大小为1500）
+	- -f 数据包能被分片
 ### 实例:
 1. 查看局域网内所有IP与Mac地址
 	- ipconfig /all 查看本机的首选IP地址

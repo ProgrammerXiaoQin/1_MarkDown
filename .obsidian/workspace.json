@@ -4,15 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "85965dbcbcab95dc",
+        "id": "a80c6c32de417fe7",
         "type": "tabs",
         "children": [
           {
-            "id": "9afcc5111f6daaa4",
+            "id": "bdc8e02e2bb83321",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "网工/1_VRP/3_VRP系统/3_操作系统相关.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c55e73bb99404464",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "网工/1_VRP/3_VRP系统/2_常用命令.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "分区",
+                "query": "MTU",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a8278059bdad0f76",
@@ -93,6 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "网工/1_VRP/3_VRP系统/3_操作系统相关.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,6 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "网工/1_VRP/3_VRP系统/3_操作系统相关.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +149,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "网工/1_VRP/3_VRP系统/3_操作系统相关.md"
+              }
             }
           },
           {
@@ -161,50 +182,54 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "5d8ce8ebf1659adc",
+  "active": "bdc8e02e2bb83321",
   "lastOpenFiles": [
-    "Linux/1_Linux基础命令/10_磁盘管理.md",
-    "Linux/8.1_Linux_麒麟使用指南.md",
-    "Linux/4_Linux系统管理/1_LVM.md",
-    "Linux/9_Linux生产问题.md",
-    "windows/1_windows安装启动.md",
-    "other/1.1_磁盘相关.md",
-    "windows/2_window_devtunnels内网穿透.md",
-    "windows/5.1_kms激活.md",
-    "windows/5.2_windows terminal免密登录Linux主机.md",
-    "Linux/3_Linux常用服务/1_ansible/1_ansible基础.md",
-    "Linux/3_Linux常用服务/7_zabbix.md",
-    "Linux/3_Linux常用服务/1_ansible",
-    "Linux/3_Linux常用服务/9_ansible.md",
-    "Linux/1_Linux基础命令/2_文件相关命令.md",
-    "Python/1_python基础.md",
+    "网工/1_VRP/3_VRP系统/4_接口子视图.md",
+    "网工/1_VRP/3_VRP系统/3_操作系统相关.md",
+    "网工/1_VRP/2_交换机/5_交换机.md",
+    "网工/1_VRP/3_常用系统操作.md",
+    "网工/1_VRP/3_VRP系统/2_常用命令.md",
+    "网工/1_VRP/3_VRP系统/1_VRP系统.md",
+    "网工/1_VRP/1_路由/4_路由器.md",
+    "网工/1_VRP/6_网络设备通用知识.md",
+    "网工/1_VRP/1_路由/8_路由操作.md",
+    "网工/2_协议/1_以太网物理层.md",
+    "网工/1_VRP/3_VRP系统",
+    "网工/1_VRP/未命名.md",
+    "网工/2_协议/1_数据链路层协议/2.以太网协议.md",
+    "网工/2_协议/1_数据链路层协议/1.数据链路层.md",
+    "网工/1_VRP/10_系统管理.md",
+    "网工/1_VRP/2_交换机",
+    "网工/1_VRP/1_路由",
+    "网工/1_VRP/2_交换机/9_交换操作.md",
+    "网工/1_VRP/7_AC,AP配置.md",
+    "网工/2_协议/2_网络层协议/2_TCP和IP.md",
     "网工/1.常用网络常识.md",
+    "网工/2_协议/3_传输层协议/2_UDP协议.md",
+    "网工/2_协议/3_传输层协议/1_TCP协议.md",
+    "网工/2_协议/2_网络层协议/1_IP协议.md",
+    "网工/2_协议/4_应用层协议/4_ssh协议.md",
+    "网工/2_协议/4_应用层协议/3_telnet协议.md",
     "windows/5_cmd_bat命令.md",
-    "网工/2_协议/5_LLDP协议.md",
-    "网工/2_协议/4_ssh协议.md",
-    "网工/2_协议/2_ICMP协议.md",
-    "网工/2_协议/1_ARP协议.md",
-    "网工/3.常见问题.md",
-    "网工/1_VRP基础/1_VRP系统.md",
-    "Python/2_常用库/9.2_python_openpyxl.md",
-    "Python/2_常用库/9.5_python_netmiko.md",
-    "Python/7_python命令行技巧.md",
-    "Linux/3_Linux常用服务/4_mysql_centos.md",
+    "other/1_Obsidian_MD_语法.md",
+    "Python/2_常用库/9_python_selenium_WebAuto.md",
+    "图床/屏幕截图 2024-02-21 153135.png",
+    "图床/屏幕截图 2024-02-21 150301.png",
+    "图床/屏幕截图 2024-02-20 192430.png",
+    "图床/屏幕截图 2024-02-20 190555.png",
+    "网工/2_协议/1_数据链路层协议",
+    "网工/2_协议/4_应用层协议",
+    "网工/2_协议/2_网络层协议",
+    "网工/2_协议/3_传输层协议",
+    "图床/屏幕截图 2024-02-20 181531.png",
+    "图床/屏幕截图 2024-02-19 102639.png",
+    "图床/1774310-20200710173946013-1095280594.png",
+    "图床/1774310-20200710173946013-1095280594.png.crdownload",
+    "Linux/3_Linux常用服务/1_ansible",
     "Python/1_内置库",
     "图床/1d4a869dd6deee7c309a8461e7579c9895011ede.jpg_640w__web-note.jpeg",
     "图床/1144139-20200831111054990-1558810125.png",
     "图床/293f9f30554a706fd14ba4c08e6f835.png",
-    "Python/2_常用库",
-    "Linux/3_Linux常用服务/5_Nginx",
-    "Linux/3_Linux常用服务/10_kubernetes",
-    "Rust",
-    "other/正则.png",
-    "Linux/3_Linux常用服务/9_docker",
-    "未命名.canvas",
-    "图床/v2-1d74866e133fff3771b97ac43ffd64cd_720w.webp",
-    "图床/v2-1d74866e133fff3771b97ac43ffd64cd_720w.webp.crdownload",
-    "Linux/4_Linux系统管理",
-    "网工/2_协议",
-    "图床/微信图片_20230817164030.png"
+    "未命名.canvas"
   ]
 }
