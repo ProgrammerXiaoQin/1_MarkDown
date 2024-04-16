@@ -90,3 +90,12 @@
 
 12. 查看系统版本 `cat /etc/os-release`
 
+13. 免密登录
+	1. `ssh-keygen -t [rsa|dsa]` 生成公钥或私钥id_rsa，id_rsa.pub或id_dsa，id_dsa.pub（位于$HOME）下
+	2. 将`.pub` 文件复制到被登录机器的家目录下`.ssh`文件夹下的 `authorized_keys` 文件中，可以使用如下命令：
+		- `ssh-copy-id -i ~/.ssh/id_rsa.pub user@server` 
+		- `cat ~/.ssh/id_rsa.pub | ssh user@host "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"` 
+	3. 修改服务器文件权限 , 否则SSH服务器可能会拒绝读取该文件
+		- `chmod 700 ~/.ssh/`
+		- `chmod 600 ~/.ssh/authorized_keys`
+

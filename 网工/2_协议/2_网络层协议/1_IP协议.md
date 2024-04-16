@@ -13,7 +13,7 @@
 	- ③（More frament）:1bit，更多分片位置（MF位）如果数据包被分片，则除了最后一个分片报文的MF位是0外，其他的都是1
 - 分段的偏移（Fragment Offset）：13bits，单位是8bits，标识分片报文相对于原始报文起始位置的偏移量
 - 生存时间（Time to live）：8bit，初始数据包会被设置一个TTL值，每经一次路由TTL值就会减一，TTL代表了数据包被路由的次数，网络中一般称为跳数  ，当TTL减为0，网络设备就会丢弃此数据包
-- 协议号：（Protocol）：8bits，标识网络层之上使用的那种封装协议，其中`TCP=6,UDP=17`
+- 协议号：（Protocol）：8bits，标识网络层之上使用的那种封装协议，其中`TCP=6,UDP=17,icmp=1`
 - 报头校验和（Header Checksum）：16bits，针对IP报头纠错字段，一定程度防止IP报头数据错乱
 - 源IP地址（Source Address）：32bits，数据包发送方IP地址
 - 目的IP地址（Destination Address）：32bits，数据包接收方IP地址
