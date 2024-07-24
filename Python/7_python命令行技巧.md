@@ -23,4 +23,6 @@
 	- `pip install pkg==2.1.2` 限定版本安装 , 也可以写成`>=2.1.2`(所安装的包必须大于等于 )
 	卸载软件包
 	- `pip uninstall pkg`
-	
+
+3. other
+	- `python -m http.server` 启动一个简易http服务，加载当前目录

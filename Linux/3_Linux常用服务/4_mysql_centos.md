@@ -1,4 +1,4 @@
-## 一.MySQL centos7 安装mysql8
+  ## 一.MySQL centos7 安装mysql8
 1. 下载 
 	- 进入www.mysql.com , 下载需要的社区版
 	- 将下载的tar包上传到服务器 , 或在服务器上用`wget url`或`curl -O url`下载
@@ -7,8 +7,7 @@
 	- 用`tar -xvf file`解压tar包
 	- 用`rpm -ivh file.rpm` 按顺序安装以下包
 		1. mysql-community-common
-		2. mysql-community-client-plugins
-		3. mysql-community-libs
+		2. mysql-communi  
 		4. mysql-community-client
 		5. mysql-community-icu-data-files
 		6. mysql-community-server​

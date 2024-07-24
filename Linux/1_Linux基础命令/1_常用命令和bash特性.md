@@ -151,3 +151,6 @@ command << delimiter
 delimiter
 #在这里delimiter是一个自定义的分隔符,你可以选择一个不会与文本内容冲突的字符串
 ```
+6. 进程替换操作符 `<(...)`
+	- 将括号中的命令的输出作为一个文件名传递给外部命令
+	- e.g.  `source <(kubectl completion zsh)`

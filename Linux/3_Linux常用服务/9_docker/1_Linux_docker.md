@@ -8,12 +8,15 @@ docker被定义为开源的容器引擎 , 可以方便对容器进行管理 , �
 	-   **仓库（Repository）**：仓库可看成一个代码控制中心，用来保存镜像。
 #### 二. Docker安装
 1. 配置yum源
+	- `yum install -y yum-utils`
+	- `yum-config-manager \   --add-repo \  https://download.docker.com/linux/centos/docker-ce.repo` 官方源
+	- `yum-config-manager \  --add-repo \  https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo` 阿里源
+	- 
+2. 更新yum工具 `yum update`
 
-3. 更新yum工具 `yum update`
+3. 安装`yum install yum-utils device-mapper-persistent-data 1vm2`
 
-4. 安装`yum install yum-utils device-mapper-persistent-data 1vm2`
-
-5. 安装docker  `yum install docker-ce docker-ce-cli containerd.`
+4. 安装docker  `yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin`
 	- 安装时如果提示找不到`docker-ce`包可以更新一下索引, `yum makecache fast`
 	- 由于 CentOS8 防火墙使用了 `nftables`，但 Docker 尚未支持 `nftables`， 我们可以使用如下设置使用 `iptables`：
 ```

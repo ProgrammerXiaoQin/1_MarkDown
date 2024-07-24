@@ -25,7 +25,6 @@
 		- `ansible web -m copy -a 'src=~/hello dest=/data/hello'`
 
 
-
 3. 例
 	1. `ansible all -i inventory_file -m shell -a "cat /etc/redhat-release"` ansible查看所有主机下的/etc/redhat-release文件
 		- `ansible` 表示要使用 Ansible 工具。
