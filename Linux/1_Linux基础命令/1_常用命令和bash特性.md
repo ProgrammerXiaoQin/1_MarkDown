@@ -60,13 +60,13 @@
 	- 在date目录下创建date01,date02..date50
 
 10. **rm** 删除文件
-	- -f 不用确认,直接删除
-	- -r 删除文件夹(如果文件夹里面有其他文件会一块删除)
+	- -f  "force"(强制)不用确认,直接删除
+	- -r "recursive"(递归)删除文件夹(如果文件夹里面有其他文件会一块删除)
 
 11. **cp** 复制文件 
 	- cp item..  directory
 	- -a  复制文件和目录以及他们的属性,包括所有权和权限.
-	- -i  重写之前已存在的文件之前提示用户确认,没这个选项则默认重写
+	- -i  "interactive"(交互式) 重写之前已存在的文件之前提示用户确认,没这个选项则默认重写
 	- -r  递归复制目录以及目录中存在的内容(-a)也有同样效果
 	- -u 复制时,仅复制目标中不存在的文件,或者文件内容新与目标文件的文件
 
@@ -83,6 +83,27 @@
 	- -d 表示top命令显示的页面更新一次的间隔
 	- -p 指定特定的pid进程号
 	
+```
+top - 17:17:30 up 20 min,  1 user,  load average: 0.00, 0.01, 0.04
+Tasks: 100 total,   1 running,  99 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem :  2895008 total,  2342540 free,   223832 used,   328636 buff/cache
+KiB Swap:  4194300 total,  4194300 free,        0 used.  2514780 avail Mem
+
+load average: 系统平均负载百分比，分别代表过去1分钟、5分钟和15分钟内的平均系统负载
+
+Tasks: 进程状态，total总进程，running正在运行的任务数，sleeping睡眠状态任务数，stopped已停止的任务数，zombie僵尸进程(已完成但父进程尚未对其进行清理的进程)数量
+
+%Cpu(s):CPU使用率
+	us(user):用户空间的应用程序消耗的CPU时间百分比
+	sy(system):系统内核耗的CPU时间百分比
+	ni(nice):通过nice值调整过优先级的进程所消耗的CPU时间百分比
+	id(idle):CPU处于空闲状态的时间百分比
+	wa(iowait):CPU 等待I/O操作完成的时间百分比
+	hi(irq):处理硬件中断所消耗的 CPU 时间百分比
+	si(softirq):处理软件中断所消耗的 CPU 时间百分比
+	st(steal):在虚拟化环境中，虚拟机等待获取 CPU 时间的时间百分比
+```
 
 14. **ls** 查看目录信息 
 	- -a 列出所有文件,包括隐藏文件
