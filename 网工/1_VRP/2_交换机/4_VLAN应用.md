@@ -49,3 +49,22 @@ VLAN中有以下两种链路类型：
 	- 一个MAC地址关联了MAC VLAN后，则不可以再用于配置其它MAC VLAN。
 2. `mac-vlan enable` ：开启接口基于mac地址划分vlan功能
 3. `port hybrid untagged vlan 10 20` ：配置Hybrid类型接口加入的VLAN，这些VLAN的帧以Untagged方式通过接口
+
+
+##### 5. VLAN间相互通信
+```
+1. 创建vlan 10，20，将G1设置为trunk口并允许vlan 10，20通过，G2依旧
+
+[RS1]interface Vlanif 10 #进入vlanif10接口
+[RS1-Vlanif10]ip address 192.168.64.254 24 #设置该SVI接口IP和掩码
+[RS1-Vlanif10]quit
+
+[RS1]interface Vlanif 20
+[RS1-Vlanif10]ip address 192.168.64.254 24
+[RS1-Vlanif10]quit
+```
+此时在三层路由器RS1上可以通过`display ip routing-table`可以查看到路由表中添加了这两SVI相关的路由条目，此时通过G1，G2接口的VLAN10,20流量可以和相互通信
+>注：`display ip interface brief` 可以看到VLANif简要信息，`display interface vlanif [vlan number]` 查看详细信息
+
+1. `interface Vlanif 10` ：进入vlanif10接口
+2. `ip address 192.168.64.254 24` ：设置对应接口的IP和掩码
