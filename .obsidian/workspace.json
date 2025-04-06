@@ -4,34 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "e4497b12ca328ac2",
+        "id": "7c2379b1895696a0",
         "type": "tabs",
         "children": [
           {
-            "id": "51886b754dfe0a2f",
+            "id": "e40419a41def126a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/1_Linux基础命令/3_网络相关命令.md",
+                "file": "网工/1_VRP/1_路由/3_OSPF.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c56e6180d441c744",
+            "id": "37ae761ffd24a69d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网工/1_VRP/2_交换机/3_接口管理.md",
+                "file": "网工/1_VRP/1_路由/1_路由器.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8be16f2ecfe4efe2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "网工/1.常用网络常识.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -60,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "SV",
+                "query": "deb",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/1_Linux基础命令/3_网络相关命令.md",
+                "file": "网工/1.常用网络常识.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/1_Linux基础命令/3_网络相关命令.md",
+                "file": "网工/1.常用网络常识.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/1_Linux基础命令/3_网络相关命令.md"
+                "file": "网工/1.常用网络常识.md"
               }
             }
           },
@@ -181,52 +194,52 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "51886b754dfe0a2f",
+  "active": "8be16f2ecfe4efe2",
   "lastOpenFiles": [
-    "Linux/1_Linux基础命令/2_文件相关命令.md",
-    "Linux/1_Linux基础命令/1_常用命令和bash特性.md",
     "网工/1.常用网络常识.md",
-    "网工/3.常见问题.md",
-    "网工/4.wireshark.md",
-    "网工/1_VRP/2_交换机/3_接口管理.md",
-    "网工/1_VRP/2_交换机/1_交换机.md",
-    "网工/1_VRP/1_路由/1_路由器.md",
-    "网工/1_VRP/1_路由/2_RIP.md",
-    "Python/2_常用库/9.7_rich_终端富文本.md",
     "网工/1_VRP/6_网络设备通用知识.md",
+    "网工/1_VRP/2_交换机/3_接口管理.md",
+    "网工/1_VRP/3_VRP系统/1_VRP系统.md",
     "网工/1_VRP/3_常用系统操作.md",
-    "Linux/3_Linux常用服务/5_Nginx/7. 负载均衡.md",
-    "Python/2_常用库/9.1_python_pandas.md",
-    "Linux/2_Linux特性和知识/5_Linux制作deb包.md",
-    "Linux/2_Linux特性和知识/3_正则表达式.md",
-    "Linux/1_Linux基础命令/9_打包和压缩.md",
-    "Linux/1_Linux基础命令/7_进程管理.md",
-    "网工/1_VRP/2_交换机/4_VLAN应用.md",
-    "网工/2_协议/2_数据链路层协议/3_VLAN协议.md",
+    "网工/1_VRP/10_系统管理.md",
+    "网工/1_VRP/1_路由/3_OSPF.md",
+    "网工/1_VRP/1_路由/1_路由器.md",
     "网工/1_VRP/4_网工知识/1_硬件介绍.md",
-    "网工/2_协议/3_网络层协议/3_ARP协议.md",
+    "windows/5_cmd_bat命令.md",
+    "windows/1_windows安装启动.md",
+    "Linux/2_Linux特性和知识/5_Linux制作deb包.md",
+    "Linux/8.2_Linux常用操作.md",
+    "Linux/8.1_Linux_麒麟使用指南.md",
+    "网工/1_VRP/5_常用功能/2_AP_AC/9_附录.md",
+    "网工/1_VRP/5_常用功能/2_AP_AC/7_AC,AP配置.md",
+    "windows/8_快捷方式.md",
+    "Python/1_内置库/1_OS.md",
+    "Python/4_python_正则.md",
+    "other/1_Obsidian_MD_语法.md",
+    "网工/1_VRP/5_常用功能/2_AP_AC",
+    "网工/1_VRP/5_常用功能/1_DHCP.md",
+    "windows/5.1_kms激活.md",
+    "windows/5.2_windows terminal免密登录Linux主机.md",
+    "windows/5.3_网络相关命令.md",
+    "windows/6_Excel.md",
+    "windows/7_域控.md",
+    "网工/3_功能划分/3_ACL访问控制列表",
+    "网工/3_功能划分/2_Vlan",
+    "网工/3_功能划分/1_路由",
+    "网工/3_ENSP技术网络技术和实用/未命名",
+    "网工/1_VRP/5_常用功能",
+    "Linux/5_系统优化",
     "图床/1273933-20180520225001696-397228935.png",
     "图床/1273933-20180520225001696-397228935.png.crdownload",
-    "网工/2_协议/2_数据链路层协议/2.以太网协议.md",
-    "网工/2_协议/2_数据链路层协议/1.数据链路层.md",
-    "网工/2_协议/1_以太网物理层.md",
-    "网工/1_VRP/3_VRP系统/1_VRP系统.md",
     "图床/u=528095728,2910797150&fm=253&fmt=auto&app=138&f=PNG.webp",
     "网工/1_VRP/4_网工知识",
     "网工/1_VRP/3_VRP系统/1_交换机命令视图",
-    "网工/3_ENSP技术网络技术和实用",
     "图床/Pasted image 20240326142940.png",
-    "Linux/3_Linux常用服务/2_Redis",
-    "Linux/3_Linux常用服务/10_kubernetes/1_组件",
     "图床/屏幕截图 2024-03-26 151305.png",
-    "网工/1_VRP/3_VRP系统",
-    "网工/1_VRP/2_交换机",
-    "网工/1_VRP/1_路由",
     "图床/屏幕截图 2024-02-21 153135.png",
     "图床/屏幕截图 2024-02-21 150301.png",
     "图床/屏幕截图 2024-02-20 192430.png",
     "图床/屏幕截图 2024-02-20 190555.png",
-    "网工/2_协议/2_数据链路层协议",
     "图床/屏幕截图 2024-02-20 181531.png",
     "图床/屏幕截图 2024-02-19 102639.png",
     "未命名.canvas"

@@ -120,8 +120,22 @@ Tasks: 进程状态，total总进程，running正在运行的任务数，sleepin
 	- -L 打印最长行的长度
 
 16. **free** 显示空闲内存数量
+```
+[root@47 temp]# free -h
+              total        used        free      shared  buff/cache  available
+Mem:           1.7G        315M         98M        724K        1.3G        1.2G
+Swap:            0B          0B          0B
 
-17. **ln** 创建硬链接 `ln [源文件] [链接文件]`
+total:总内存
+used：已使用内存
+free：真正用剩余内存
+shared：: 表示多个进程共享的内存总额（通常为0，已被废弃）
+buff：写入磁盘内存缓冲区的大小,用于提高磁盘写入效率
+cache:磁盘中读取内容的缓存大小,用于提高磁盘读取效率
+available：操作系统可以立即分配给进程的内存，包括buff/chache中部分可被释放的缓存和free
+```
+
+18. **ln** 创建硬链接 `ln [源文件] [链接文件]`
 	- `ln file link`   创建硬链接
 	- `ln  -s  item link`  创建符号链接 item可以是文件或者目录
 	- 硬链接不能关联它所在文件系统之外的文件(也就是链接不能关联与链接所在磁盘不在一个文件磁盘分区上的文件)

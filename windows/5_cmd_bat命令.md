@@ -66,3 +66,9 @@ netsh interface ipv6 add route ::/0 网卡名称  网关
 	   注意：该命令中输入的IP地址前3位必须与本机的IP地址相同。
 	- arp -a
 
+2. windows11 安装跳过联网激活
+	1. 进入OOBE界面，按`shift+F10` 打开终端（笔记本可能要按`fn+shift+f10`）
+	2. 输入`devmgmt.msc` 打开设备管理器，禁用网卡驱动
+	3. 输入`oobe\bypassnro` 等待重启
+	4. 如果`oobe\bypassnro` 命令失效，可输入`reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE /v BypassNRO /t REG_DWORD /d 1 /f shutdown /r /t 0` 
+
