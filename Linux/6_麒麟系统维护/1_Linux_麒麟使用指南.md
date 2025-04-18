@@ -8,6 +8,7 @@
 2. sudo
 	**sudo + command** 用管理员身份执行command
 	- -s 以后的所有命令都是管理身份执行
+	- -i 切换为root用户
 
 3. **lscpu** 查看cpu信息,Architecture指架构
 	-   ARM架构：aarch64、arm64

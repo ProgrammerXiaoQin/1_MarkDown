@@ -72,3 +72,4 @@ netsh interface ipv6 add route ::/0 网卡名称  网关
 	3. 输入`oobe\bypassnro` 等待重启
 	4. 如果`oobe\bypassnro` 命令失效，可输入`reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE /v BypassNRO /t REG_DWORD /d 1 /f shutdown /r /t 0` 
 
+3. 磁盘检查：`chkdsk /f` 检查磁盘错误（慎用，磁盘有坏道情况容易丢失数据）
