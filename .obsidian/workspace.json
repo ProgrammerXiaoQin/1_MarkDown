@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "windows/8_快捷方式.md",
+                "file": "Linux/1_Linux基础命令/2_文件相关命令.md",
                 "mode": "source",
                 "source": false
               }
@@ -30,8 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4cda3ce4287bb041",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/1_Linux基础命令/1_常用命令和bash特性.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -60,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "deb",
+                "query": "mv",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,11 +102,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 400.5
   },
   "right": {
     "id": "a8278059bdad0f76",
@@ -109,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "windows/8_快捷方式.md",
+                "file": "Linux/1_Linux基础命令/1_常用命令和bash特性.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "windows/8_快捷方式.md",
+                "file": "Linux/1_Linux基础命令/1_常用命令和bash特性.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "windows/8_快捷方式.md"
+                "file": "Linux/1_Linux基础命令/1_常用命令和bash特性.md"
               }
             }
           },
@@ -180,11 +194,20 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "2df8102b513b8259",
+  "active": "4cda3ce4287bb041",
   "lastOpenFiles": [
+    "网工/1.常用网络常识.md",
+    "网工/3.常见问题.md",
+    "网工/4.wireshark.md",
+    "Linux/1_Linux基础命令/9_打包和压缩.md",
+    "Linux/1_Linux基础命令/10_磁盘管理.md",
+    "Linux/1_Linux基础命令/2_文件相关命令.md",
+    "Linux/6_麒麟系统维护/1_Linux_麒麟使用指南.md",
+    "Linux/1_Linux基础命令/11_包管理.md",
+    "Linux/3_Linux常用服务/4_mysql_centos.md",
+    "windows/8_快捷方式.md",
     "网工/1_VRP/1_路由/4_NAT.md",
     "网工/1_VRP/1_路由/1_路由器.md",
-    "windows/8_快捷方式.md",
     "windows/7_域控.md",
     "windows/6_Excel.md",
     "windows/5.3_网络相关命令.md",
@@ -195,20 +218,11 @@
     "windows/1_windows安装启动.md",
     "Linux/6_麒麟系统维护/2_创建桌面启动器.md",
     "Linux/8.3_其他第三方Linux软件.md",
-    "Linux/6_麒麟系统维护/1_Linux_麒麟使用指南.md",
     "Linux/2_Linux特性和知识/5_Linux制作deb包.md",
     "Linux/6_麒麟系统维护",
     "Linux/1_Linux基础命令/1_常用命令和bash特性.md",
     "Linux/3_Linux常用服务/2_Linux_定时任务.md",
     "Linux/8.2_Linux常用操作.md",
-    "Linux/2_Linux特性和知识/4_Linux三剑客.md",
-    "Linux/2_Linux特性和知识/3_正则表达式.md",
-    "Linux/2_Linux特性和知识/2_Linux_shell.md",
-    "Linux/1_Linux基础命令/5_vim编辑器.md",
-    "Python/1_python基础.md",
-    "Linux/2_Linux特性和知识/1_Linux基础知识.md",
-    "Linux/4_Linux系统管理/1_LVM.md",
-    "网工/1.常用网络常识.md",
     "网工/1_VRP/5_常用功能/2_AP_AC",
     "网工/3_功能划分/3_ACL访问控制列表",
     "网工/3_功能划分/2_Vlan",
