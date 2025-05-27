@@ -9,7 +9,7 @@
 ```
 此时，直连此接口的设备可以自动获取IP地址
 
-#### 2. 配置DHCP地址池
+#### 2. 配置DHCP地址池     
 ```
 <HUAWEI> system-view
 [HUAWEI] dhcp enable

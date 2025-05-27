@@ -19,6 +19,21 @@
 [R1-G0]nat static enable
 ```
 
+2. 动态NAT/NAPT：
+```H3C
+### 内网IP：192.168.1.1，公网IP：202.100.1.1 
+
+## 1.匹配内网流量
+acl basic 2000
+rule permit source 192.168.1.0 0.0.0.255  # 允许转换的内网网段
+
+## 2.设置NAT地址池
+nat address-group 1
+address 202.100.1.2 202.100.1.5  # 公网IP地址池
+
+## 3.外网接口启动NAT
+[G0/1]nat outbound 2000 [address-group 1]  # 不写address-group则默认使用接口IP（PAT）
+```
 
 
 
