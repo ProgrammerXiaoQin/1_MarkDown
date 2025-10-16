@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网工/2_协议/3_网络层协议/4_ICMP协议.md",
+                "file": "Linux/6_麒麟系统维护/3_kysec.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网工/2_协议/3_网络层协议/4_ICMP协议.md",
+                "file": "Linux/6_麒麟系统维护/3_kysec.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网工/2_协议/3_网络层协议/4_ICMP协议.md",
+                "file": "Linux/6_麒麟系统维护/3_kysec.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网工/2_协议/3_网络层协议/4_ICMP协议.md"
+                "file": "Linux/6_麒麟系统维护/3_kysec.md"
               }
             }
           },
@@ -171,6 +171,9 @@
   },
   "active": "fd54af6a8639b9b6",
   "lastOpenFiles": [
+    "Linux/6_麒麟系统维护/1_Linux_麒麟使用指南.md",
+    "Linux/6_麒麟系统维护/3_kysec.md",
+    "网工/2_协议/3_网络层协议/4_ICMP协议.md",
     "网工/4.wireshark.md",
     "Linux/3_Linux常用服务/9_docker/1_Linux_docker.md",
     "网工/1_VRP/2_交换机/4_VLAN应用.md",
@@ -197,9 +200,6 @@
     "windows/5_cmd_bat命令.md",
     "windows/2_window_devtunnels内网穿透.md",
     "windows/1_windows安装启动.md",
-    "Python/1_python基础.md",
-    "Python/7_python命令行技巧.md",
-    "网工/1_VRP/3_VRP系统/3_操作系统相关.md",
     "图床/BIGID.png",
     "图床/屏幕截图 2025-05-18 234421.png",
     "网工/2_协议/other",
