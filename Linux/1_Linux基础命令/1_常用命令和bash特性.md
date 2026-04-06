@@ -9,7 +9,7 @@
  3. **systemctl restart network**  重启网络服务
 	 - status  查看服务运行状态
 	 - enable 开机后自动开启
-	 - disable 关闭,重启后也不会开启
+	 - disable 关闭,重启后也不会开启   
 	 - start     临时开启
 	 - stop     临时关闭
 

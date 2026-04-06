@@ -66,8 +66,8 @@ drink beer ?' test.txt
 ## 把所有root替换为chao, 并打印替换掉行的结果
 [canti@localhost ~]$sed -i '/^root/,/^ftp/d' passwd.bak 
 ## 删除root开头的行到ftp开头的行
-[canti@localhost ~]$sed -E 's/(^.)/@\1/' passwd
-## 给所有行前面加上@
+[canti@localhost ~]$sed 's/^/@/' 文件名
+## 给所有行前面加上@（不修改）
  ```
 
 -  **数据搜索并执行指令**
