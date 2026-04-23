@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "正则",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 308.5
   },
   "right": {
     "id": "a8278059bdad0f76",
@@ -171,7 +171,13 @@
   },
   "active": "31e185144c21aa36",
   "lastOpenFiles": [
+    "IDC运维/4_关于BMC中的共享口和专口.md",
     "IDC运维/1_带外刷新FRU和PCIE信息.md",
+    "Linux/2_Linux特性和知识/3_正则表达式.md",
+    "IDC运维/3_浪潮服务器Power_Fault`.md",
+    "IDC运维/2_服务器挂载u盘提示只读.md",
+    "Linux/1_Linux基础命令/10_磁盘管理.md",
+    "Linux/1_Linux基础命令/1_常用命令和bash特性.md",
     "IDC运维",
     "Linux/1_Linux基础命令/6_用户-权限-组.md",
     "Linux/1_Linux基础命令/7_进程管理.md",
@@ -192,12 +198,6 @@
     "网工/4_Configuration equipment/1_Router/1_Static routing.md",
     "网工/3_Configuration protocol/1_DHCP.md",
     "网工/2_协议/1_以太网物理层.md",
-    "网工/2_协议/5_应用层协议/4_ssh协议.md",
-    "other/4_raid 磁盘阵列.md",
-    "Linux/3_Linux常用服务/1_ansible/4_ad-hoc模式.md",
-    "Linux/3_Linux常用服务/1_ansible/3_相关文件.md",
-    "Linux/3_Linux常用服务/1_ansible/2_安装.md",
-    "Linux/3_Linux常用服务/1_ansible/1_ansible基础.md",
     "Pasted image 20250527234501.png",
     "图床/stp-端口成本.png",
     "windows/1_deskhelp笔记",
